@@ -1,0 +1,19 @@
+loss_fang=[1930; 2180; 3390; 4010; 4610];
+loss_overlap=[1450; 2020; 2980; 3700; 3980];
+x=[1:5];
+plot(x,loss_fang,'-rs','LineWidth',2','MarkerEdgeColor','r','MarkerSize',12);
+hold on;
+plot(x,loss_overlap,'--gd','LineWidth',2','MarkerEdgeColor','g','MarkerSize',12);
+axis([1 5 1000 5000]);
+set(gca,'XTick',[1 2 3 4 5]);
+set(gca,'XTickLabel',{'10', '20', '30', '40', '50'});
+set(gca,'YTick',[1000 2000 3000 4000 5000]);
+set(gca,'YTickLabel',{'0.10','0.15', '0.20','0.25', '0.30','0.35','0.40'})
+xlabel('Number of tasks','fontsize',18);
+ylabel('Data loss rate','FontSize',18);
+h=legend('GA','Overlap',2);
+set(gca,'fontsize',16);
+set(h,'FontSize',14);
+%title('b');
+grid on;
+axis square;

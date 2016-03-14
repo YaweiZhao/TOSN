@@ -1,0 +1,20 @@
+%2.864
+energy_fang=[2677; 2621; 2583; 2544; 2511; 2479; 2453];
+energy_overlap=[2685; 2635; 2593; 2554; 2528; 2495; 2472]
+x=[1:7];
+plot(x,energy_fang,'-rs','LineWidth',2','MarkerEdgeColor','r','MarkerSize',12);
+hold on;
+plot(x,energy_overlap,'--gd','LineWidth',2','MarkerEdgeColor','g','MarkerSize',12);
+axis([1 7 2450 2700]);
+set(gca,'XTick',[1 2 3 4 5 6 7]);
+set(gca,'XTickLabel',{'100', '200', '300', '400', '500','600','700'});
+set(gca,'YTick',[2450 2500 2550 2600 2650 2700]);
+set(gca,'YTickLabel',{'2.45','2.50', '2.55','2.60', '2.65','2.70'})
+xlabel('Number of time slot','fontsize',18);
+ylabel('Voltage of batteries (Volts)','FontSize',18);
+set(gca,'fontsize',16);
+h=legend('GA','Overlap',1);
+set(h,'FontSize',14);
+%title('a');
+grid on;
+axis square;

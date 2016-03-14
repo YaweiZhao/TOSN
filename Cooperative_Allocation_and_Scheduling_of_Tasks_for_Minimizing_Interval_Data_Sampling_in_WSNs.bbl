@@ -1,0 +1,266 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem[\protect\citeauthoryear{Arici, Gedik, Altunbasak, and Liu}{Arici
+  et~al\mbox{.}}{2003}]%
+        {2003_PINCO}
+{T. Arici}, {B. Gedik}, {Y. Altunbasak}, {and} {L. Liu}. 2003.
+\newblock \showarticletitle{PINCO: a Pipelined In-Network COmpression Scheme
+  for Data Collection in Wireless Sensor Networks}. In {\em IEEE Proceedings of
+  12th International Conference on Computer Communications and Networks}.
+  539--544.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bharghavan, Demers, Shenker, and
+  Zhang}{Bharghavan et~al\mbox{.}}{1994}]%
+        {1994MACAW}
+{Vaduvur Bharghavan}, {Alan Demers}, {Scott Shenker}, {and} {Lixia Zhang}.
+  1994.
+\newblock \showarticletitle{MACAW: a media access protocol for wireless LAN's}.
+  In {\em ACM SIGCOMM}. London, UK, 212--225.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cerullo, Fazio, Fabbri, Muzi, and
+  Sacerdoti}{Cerullo et~al\mbox{.}}{2005}]%
+        {2005acoustic_diagnose_train}
+{M. Cerullo}, {G. Fazio}, {M. Fabbri}, {F. Muzi}, {and} {G. Sacerdoti}. 2005.
+\newblock \showarticletitle{Acoustic signal processing to diagnose transiting
+  electric trains}.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/} {6},
+  2 (2005), 238--243.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Demirkol, Ersoy, and Alagoz}{Demirkol
+  et~al\mbox{.}}{2006}]%
+        {2006_MAC_survey}
+{Ilker Demirkol}, {Cem Ersoy}, {and} {Fatih Alagoz}. 2006.
+\newblock \showarticletitle{MAC protocols for wireless sensor networks: a
+  survey}.
+\newblock {\em IEEE Communications Magazine\/} {44}, 4 (2006), 115--121.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fang, Gao, Li, and Li}{Fang
+  et~al\mbox{.}}{2013}]%
+        {2013fang}
+{Xiaolin Fang}, {Hong Gao}, {Jianzhong Li}, {and} {Yingshu Li}. 2013.
+\newblock \showarticletitle{Application-aware data collection in Wireless
+  Sensor Networks}. In {\em Proc. IEEE INFOCOM}. Turin, Italy, 1645--1653.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Huang and Tseng}{Huang and Tseng}{2003}]%
+        {2005_coverage_problem}
+{Chi-Fu Huang} {and} {Yu-Chee Tseng}. 2003.
+\newblock \showarticletitle{The Coverage Problem in a Wireless Sensor Network}.
+  In {\em Proc. ACM WSNA}. San Diego, California, USA, 115--121.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jiang, Guo, Hong, Ma, and Luo}{Jiang
+  et~al\mbox{.}}{2009}]%
+        {2009_oceansense}
+{Mingxing Jiang}, {Zhongwen Guo}, {Feng Hong}, {Yutao Ma}, {and} {Hanjiang
+  Luo}. 2009.
+\newblock \showarticletitle{OceanSense: A practical wireless sensor network on
+  the surface of the sea}. In {\em Proc. IEEE PerCom}. Galveston, Texas, USA,
+  1--5.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Levis, Lee, Welsh, and Culler}{Levis
+  et~al\mbox{.}}{2003}]%
+        {2003_TOSSIM}
+{Philip Levis}, {Nelson Lee}, {Matt Welsh}, {and} {David Culler}. 2003.
+\newblock \showarticletitle{Tossim: accurate and scalable simulation of entire
+  tinyos applications}. In {\em Proc. ACM Sensys}. Los Angeles, California,
+  USA, 126--137.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li and Liu}{Li and Liu}{2007}]%
+        {2007_undergroundMonitoring}
+{Mo Li} {and} {Yunhao Liu}. 2007.
+\newblock \showarticletitle{Underground Structure Monitoring with Wireless
+  Sensor Networks}. In {\em Proc. IEEE IPSN}. Cambridge, Massachusetts, USA,
+  69--78.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mao, Liu, Tang, Liu, Han, and Li}{Mao
+  et~al\mbox{.}}{2013}]%
+        {2013_TPDS_coverage}
+{Xufei Mao}, {Yunhao Liu}, {Shaojie Tang}, {Huafu Liu}, {Jiankang Han}, {and}
+  {Xiang-Yang Li}. 2013.
+\newblock \showarticletitle{Finding Best and Worst k-Coverage Paths in Multihop
+  Wireless Sensor Networks}.
+\newblock {\em IEEE Transactions on Parallel and Distributed Systems\/} {24},
+  12 (2013), 2396--2406.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mo, He, Liu, Zhao, Tang, Li, and Dai}{Mo
+  et~al\mbox{.}}{2009}]%
+        {2009greenorbs}
+{Lufeng Mo}, {Yuan He}, {Yunhao Liu}, {Jizhong Zhao}, {Shao-Jie Tang},
+  {Xiang-Yang Li}, {and} {Guojun Dai}. 2009.
+\newblock \showarticletitle{Canopy Closure Estimates with GreenOrbs:
+  Sustainable Sensing in the Forest}. In {\em Proc. ACM SenSys}. Berkeley,
+  California, USA, 99--112.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pradhan, Kusuma, and Ramchandran}{Pradhan
+  et~al\mbox{.}}{2002}]%
+        {2002_distributed_compression}
+{S.~S. Pradhan}, {J. Kusuma}, {and} {K. Ramchandran}. 2002.
+\newblock \showarticletitle{Distributed compression in a dense microsensor
+  network}.
+\newblock {\em IEEE Signal Processing Magazine\/} {19}, 2 (2002), 51--60.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sheng, Li, Mao, and Jin}{Sheng
+  et~al\mbox{.}}{2007}]%
+        {2007_outlier_detection_mobihoc}
+{Bo Sheng}, {Qun Li}, {Weizhen Mao}, {and} {Wen Jin}. 2007.
+\newblock \showarticletitle{Outlier Detection in Sensor Networks}. In {\em
+  Proc. ACM MobiHoc}. Montreal, Quebec, Canada, 219--228.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sohrabi, Manriquez, and Pottie}{Sohrabi
+  et~al\mbox{.}}{1999}]%
+        {1999_wideband_channel_measurement}
+{K. Sohrabi}, {B. Manriquez}, {and} {G.J. Pottie}. 1999.
+\newblock \showarticletitle{Near ground wideband channel measurement in
+  800-1000 MHz}. In {\em Proc. IEEE Vehicular Technology Conference}. Houston,
+  Texas, USA, 571--574.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Song, Yuan, and LaHusen}{Song
+  et~al\mbox{.}}{2006}]%
+        {2006_time_optimum_mass}
+{Wen~Zhan Song}, {Fenghua Yuan}, {and} {Richard LaHusen}. 2006.
+\newblock \showarticletitle{Time-Optimum Packet Scheduling for Many-to-One
+  Routing in Wireless Sensor Networks}. In {\em Proc. IEEE MASS}. Vancouver,
+  Canada, 81--90.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Suzuki, Saruwatari, Kurata, and
+  Morikawa}{Suzuki et~al\mbox{.}}{2007}]%
+        {2007sensys_earthquake_monitor}
+{Makoto Suzuki}, {Shunsuke Saruwatari}, {Narito Kurata}, {and} {Hiroyuki
+  Morikawa}. 2007.
+\newblock \showarticletitle{A High-density Earthquake Monitoring System Using
+  Wireless Sensor Networks}. In {\em Proc. ACM SenSys}. Sydney, Australia,
+  373--374.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Szewczyk, Osterweil, Polastre, Hamilton,
+  Mainwaring, and Estrin}{Szewczyk et~al\mbox{.}}{2004}]%
+        {2004habitat_monitoring}
+{Robert Szewczyk}, {Eric Osterweil}, {Joseph Polastre}, {Michael Hamilton},
+  {Alan Mainwaring}, {and} {Deborah Estrin}. 2004.
+\newblock \showarticletitle{Habitat Monitoring with Sensor Networks}.
+\newblock {\em Communications of the ACM-Wireless sensor networks\/} {47}, 6
+  (2004), 34--40.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tavakoli, Kansal, and Nath}{Tavakoli
+  et~al\mbox{.}}{2010}]%
+        {2010task_optimization}
+{Arsalan Tavakoli}, {Aman Kansal}, {and} {Suman Nath}. 2010.
+\newblock \showarticletitle{On-line sensing task optimization for shared
+  sensors}. In {\em Proc. ACM/IEEE IPSN}. Stockholm, Sweden, 47--57.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Trigoni, Yong, Demers, Gehrke, and
+  Rajaraman}{Trigoni et~al\mbox{.}}{2005}]%
+        {2005_multi_query}
+{Niki Trigoni}, {Yao Yong}, {Alan Demers}, {Johannes Gehrke}, {and} {Rajmohan
+  Rajaraman}. 2005.
+\newblock \showarticletitle{Multi-query Optimization for Sensor Networks}.
+\newblock {\em Springer Lecture Notes in Computer Science\/} (2005), 307--321.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xiang, Luo, and Vasilakos}{Xiang
+  et~al\mbox{.}}{2011}]%
+        {2011_compressed_data_aggregation}
+{Liu Xiang}, {Jun Luo}, {and} {A. Vasilakos}. 2011.
+\newblock \showarticletitle{Compressed data aggregation for energy efficient
+  wireless sensor networks}. In {\em Proc. IEEE SECON}. Salt Lake City, Utah,
+  USA, 46--54.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xiang, Lim, Tan, and Zhou}{Xiang
+  et~al\mbox{.}}{2007}]%
+        {2007_two_tier_icdcs}
+{Shili Xiang}, {Hock~Beng Lim}, {K.-L. Tan}, {and} {Yongluan Zhou}. 2007.
+\newblock \showarticletitle{Two-tier multiple query optimization for sensor
+  networks}. In {\em Proc. IEEE ICDCS}. 3--9.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Rangwala, Chintalapudi, Ganesan, Broad,
+  Govindan, and Estrin}{Xu et~al\mbox{.}}{2004}]%
+        {2004structuralMonitoring}
+{Ning Xu}, {Sumit Rangwala}, {Krishna~Kant Chintalapudi}, {Deepak Ganesan},
+  {Alan Broad}, {Ramesh Govindan}, {and} {Deborah Estrin}. 2004.
+\newblock \showarticletitle{A Wireless Sensor Network For Structural
+  Monitoring}. In {\em Proc. ACM SenSys}. Baltimore, Maryland, USA, 13--24.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Saifullah, Chen, Lu, and Bhattacharya}{Xu
+  et~al\mbox{.}}{2010}]%
+        {2010_near_optimal_mobihoc}
+{You Xu}, {Abusayeed Saifullah}, {Yixin Chen}, {Chenyang Lu}, {and} {Sangeeta
+  Bhattacharya}. 2010.
+\newblock \showarticletitle{Near Optimal Multi-application Allocation in Shared
+  Sensor Networks}. In {\em Proc. ACM MobiHoc}. 181--190.
+\newblock
+
+
+\end{thebibliography}

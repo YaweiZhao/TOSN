@@ -1,0 +1,18 @@
+
+data_sampled=[27 25.5 25.1; 35.2 31.8 31.3; 41.4 38.4 37.5; 42.5 41.3 40.2; 47.3 44.2 42.7];
+x=[10:10:50];
+pic = bar(x,data_sampled,'grouped');
+set(pic, {'facecolor'}, {'r'; 'g';'b'})
+grid on;
+set(gca, 'XTick',[10 20 30 40 50])
+set(gca, 'YTick',[25 30 35 40 45 50])
+set(gca, 'XTickLabel',{'10','20','30','40','50'})
+set(gca, 'YTickLabel',{'25','30','35','40','45','50'})
+axis([5 55 25 50]);
+xlabel('Number of tasks','FontSize',18)
+ylabel('Number of transmitted packets', 'FontSize',18);
+set(gca,'fontsize',16);
+h = legend('GA','Overlap','DP',2);
+set(h,'FontSize',14);
+%title('a')
+axis square;
