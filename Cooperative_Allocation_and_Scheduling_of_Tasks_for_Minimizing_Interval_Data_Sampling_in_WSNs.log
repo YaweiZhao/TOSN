@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.10)  12 JAN 2016 22:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.10)  16 MAR 2016 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,6 +345,9 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 (./Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_
 Sampling_in_WSNs.aux
 
+LaTeX Warning: Label `section_preliminary_problem' multiply defined.
+
+
 LaTeX Warning: Label `figure_combination' multiply defined.
 
 )
@@ -459,101 +462,94 @@ LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 86.
 
+Underfull \vbox (badness 5893) has occurred while \output is active []
+
+
 Overfull \vbox (72.27pt too high) has occurred while \output is active []
 
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
-]
-<Figures/figure_introduction_scheduling.pdf, id=15, 247.14232pt x 177.09863pt>
+] [2]
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 100.
+
+
+LaTeX Warning: Reference `corollary_allocation' on page 3 undefined on input li
+ne 100.
+
+
+<Figures/figure_introduction_scheduling.pdf, id=21, 247.14232pt x 177.09863pt>
 File: Figures/figure_introduction_scheduling.pdf Graphic file (type pdf)
 
 <use Figures/figure_introduction_scheduling.pdf>
 Package pdftex.def Info: Figures/figure_introduction_scheduling.pdf used on inp
-ut line 95.
-(pdftex.def)             Requested size: 130.68073pt x 93.64293pt.
+ut line 110.
+(pdftex.def)             Requested size: 178.19879pt x 127.69466pt.
 
-<Figures/figure_introduction_allocation.pdf, id=16, 288.4065pt x 204.91154pt>
+<Figures/figure_introduction_allocation.pdf, id=22, 288.4065pt x 204.91154pt>
 File: Figures/figure_introduction_allocation.pdf Graphic file (type pdf)
 
 <use Figures/figure_introduction_allocation.pdf>
 Package pdftex.def Info: Figures/figure_introduction_allocation.pdf used on inp
-ut line 97.
-(pdftex.def)             Requested size: 158.39758pt x 112.54535pt.
+ut line 111.
+(pdftex.def)             Requested size: 198.0pt x 140.68246pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./Figures/figure_introduction_scheduling.pdf> <./Figures/figure_introducti
+ [3]
+Underfull \vbox (badness 3240) has occurred while \output is active []
+
+ [4 <./Figures/figure_introduction_scheduling.pdf> <./Figures/figure_introducti
 on_allocation.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_introductio
 n_allocation.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
->]
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 113.
- [3]
-Underfull \vbox (badness 3471) has occurred while \output is active []
+>] [5]
+Underfull \hbox (badness 1412) in paragraph at lines 174--177
+[] \OT1/pnc/m/n/10 A wire-less sen-sor net-work
+ []
 
- [4]
-<Figures/figure_overview_task_model.pdf, id=79, 250.31818pt x 174.10545pt>
+<Figures/figure_overview_task_model.pdf, id=83, 250.31818pt x 174.10545pt>
 File: Figures/figure_overview_task_model.pdf Graphic file (type pdf)
 
 <use Figures/figure_overview_task_model.pdf>
 Package pdftex.def Info: Figures/figure_overview_task_model.pdf used on input l
-ine 147.
-(pdftex.def)             Requested size: 118.80121pt x 82.63187pt.
+ine 184.
+(pdftex.def)             Requested size: 158.39758pt x 110.17317pt.
 
-<Figures/figure_overview_network_model.pdf, id=80, 289.73846pt x 279.88365pt>
+<Figures/figure_overview_network_model.pdf, id=84, 289.73846pt x 279.88365pt>
 File: Figures/figure_overview_network_model.pdf Graphic file (type pdf)
 
 <use Figures/figure_overview_network_model.pdf>
 Package pdftex.def Info: Figures/figure_overview_network_model.pdf used on inpu
-t line 149.
-(pdftex.def)             Requested size: 130.68073pt x 126.23688pt.
- [5 <./Figures/figure_overview_task_model.pdf> <./Figures/figure_overview_netwo
-rk_model.pdf
+t line 186.
+(pdftex.def)             Requested size: 166.31927pt x 160.6628pt.
+ [6]
+Underfull \hbox (badness 2932) in paragraph at lines 209--211
+[] \OT1/pnc/m/n/10 Given a task set $\OML/cmm/m/it/10 T$ \OT1/pnc/m/n/10 with
+ []
+
+[7 <./Figures/figure_overview_task_model.pdf> <./Figures/figure_overview_networ
+k_model.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_overview_ne
 twork_model.pdf): PDF inclusion: multiple pdfs with page group included in a si
 ngle page
 >]
-Underfull \vbox (badness 3815) has occurred while \output is active []
-
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
-<Figures/figure_proof_scheduling_1.pdf, id=163, 386.01215pt x 97.25835pt>
-File: Figures/figure_proof_scheduling_1.pdf Graphic file (type pdf)
 
-<use Figures/figure_proof_scheduling_1.pdf>
-Package pdftex.def Info: Figures/figure_proof_scheduling_1.pdf used on input li
-ne 263.
-(pdftex.def)             Requested size: 205.92169pt x 51.88353pt.
-
-<Figures/figure_proof_scheduling_2.pdf, id=164, 320.09186pt x 193.42061pt>
-File: Figures/figure_proof_scheduling_2.pdf Graphic file (type pdf)
-
-<use Figures/figure_proof_scheduling_2.pdf>
-Package pdftex.def Info: Figures/figure_proof_scheduling_2.pdf used on input li
-ne 265.
-(pdftex.def)             Requested size: 170.2771pt x 102.8961pt.
- [7] [8 <./Figures/figure_proof_scheduling_1.pdf> <./Figures/figure_proof_sched
-uling_2.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_proof_sched
-uling_2.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 319--322
+Underfull \hbox (badness 10000) in paragraph at lines 264--267
 [] \OT1/pnc/m/n/10 Con-sider two over-lap-ping tasks $\OML/cmm/m/it/10 t[][]b[]
 ; e[]; l[][]$ \OT1/pnc/m/n/10 and
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 319--322
+Underfull \hbox (badness 1975) in paragraph at lines 264--267
 \OML/cmm/m/it/10 t[][]b[]; e[]; l[][]$\OT1/pnc/m/n/10 . We de-fine two vari-abl
 es $\OML/cmm/m/it/10 b$ \OT1/pnc/m/n/10 and $\OML/cmm/m/it/10 e$ \OT1/pnc/m/n/1
 0 such that $\OML/cmm/m/it/10 b[] []\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 b[]; b[]
@@ -561,7 +557,7 @@ es $\OML/cmm/m/it/10 b$ \OT1/pnc/m/n/10 and $\OML/cmm/m/it/10 e$ \OT1/pnc/m/n/1
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 319--322
+Underfull \hbox (badness 1728) in paragraph at lines 264--267
 \OML/cmm/m/it/10 e[] []\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 e[]; e[]\OMS/cmsy/m/n
 /10 g$\OT1/pnc/m/n/10 . Given $\OML/cmm/m/it/10 l[][] []\OMS/cmsy/m/n/10 f\OML/
 cmm/m/it/10 l[]; e[]b\OMS/cmsy/m/n/10 g$ \OT1/pnc/m/n/10 and $\OML/cmm/m/it/10 
@@ -570,46 +566,43 @@ l[][] []\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 l[]; e[]b\OMS/cmsy/m/n/10 g$\OT1/pnc
 t[]$ \OT1/pnc/m/n/10 if and
  []
 
-<Figures/figure2_a.pdf, id=351, 208.48792pt x 157.6801pt>
+[8] <Figures/figure2_a.pdf, id=176, 208.48792pt x 157.6801pt>
 File: Figures/figure2_a.pdf Graphic file (type pdf)
 
 <use Figures/figure2_a.pdf>
-Package pdftex.def Info: Figures/figure2_a.pdf used on input line 376.
-(pdftex.def)             Requested size: 91.07831pt x 68.8838pt.
+Package pdftex.def Info: Figures/figure2_a.pdf used on input line 318.
+(pdftex.def)             Requested size: 122.75903pt x 92.84277pt.
 
-<Figures/figure2_b.pdf, id=352, 204.54617pt x 155.92755pt>
+<Figures/figure2_b.pdf, id=177, 204.54617pt x 155.92755pt>
 File: Figures/figure2_b.pdf Graphic file (type pdf)
 
 <use Figures/figure2_b.pdf>
-Package pdftex.def Info: Figures/figure2_b.pdf used on input line 378.
-(pdftex.def)             Requested size: 91.07831pt x 69.43155pt.
+Package pdftex.def Info: Figures/figure2_b.pdf used on input line 320.
+(pdftex.def)             Requested size: 126.7229pt x 96.60507pt.
 
-<Figures/figure2_c.pdf, id=353, 210.23944pt x 158.99399pt>
+<Figures/figure2_c.pdf, id=178, 210.23944pt x 158.99399pt>
 File: Figures/figure2_c.pdf Graphic file (type pdf)
 
 <use Figures/figure2_c.pdf>
-Package pdftex.def Info: Figures/figure2_c.pdf used on input line 380.
-(pdftex.def)             Requested size: 91.07831pt x 68.87798pt.
- [9]
-LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 396.
+Package pdftex.def Info: Figures/figure2_c.pdf used on input line 322.
+(pdftex.def)             Requested size: 126.7229pt x 95.83623pt.
 
-<Figures/figure_combination_overlap.pdf, id=357, 210.89842pt x 130.74345pt>
-File: Figures/figure_combination_overlap.pdf Graphic file (type pdf)
+<Figures/figure_proof_scheduling_1.pdf, id=179, 386.01215pt x 97.25835pt>
+File: Figures/figure_proof_scheduling_1.pdf Graphic file (type pdf)
 
-<use Figures/figure_combination_overlap.pdf>
-Package pdftex.def Info: Figures/figure_combination_overlap.pdf used on input l
-ine 428.
-(pdftex.def)             Requested size: 110.87952pt x 68.73907pt.
+<use Figures/figure_proof_scheduling_1.pdf>
+Package pdftex.def Info: Figures/figure_proof_scheduling_1.pdf used on input li
+ne 333.
+(pdftex.def)             Requested size: 257.39758pt x 64.85405pt.
 
-<Figures/figure_combination_combine.pdf, id=358, 283.29741pt x 129.29704pt>
-File: Figures/figure_combination_combine.pdf Graphic file (type pdf)
+<Figures/figure_proof_scheduling_2.pdf, id=180, 320.09186pt x 193.42061pt>
+File: Figures/figure_proof_scheduling_2.pdf Graphic file (type pdf)
 
-<use Figures/figure_combination_combine.pdf>
-Package pdftex.def Info: Figures/figure_combination_combine.pdf used on input l
-ine 430.
-(pdftex.def)             Requested size: 138.60242pt x 63.2614pt.
- [10 <./Figures/figure2_a.pdf> <./Figures/figure2_b.pdf
+<use Figures/figure_proof_scheduling_2.pdf>
+Package pdftex.def Info: Figures/figure_proof_scheduling_2.pdf used on input li
+ne 335.
+(pdftex.def)             Requested size: 237.60242pt x 143.58055pt.
+ [9 <./Figures/figure2_a.pdf> <./Figures/figure2_b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure2_b.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
@@ -617,303 +610,345 @@ F inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure2_c.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] [11 <./Figures/figure_combination_overlap.pdf> <./Figures/figure_combination
-_combine.pdf
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./Figures/figure_proof_scheduling_1.pdf> <./Figures/figure_proof_scheduli
+ng_2.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_proof_sched
+uling_2.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 407.
+ <Figures/figure_combination_overlap.pdf, id=489, 210.89842pt x 130.74345pt>
+File: Figures/figure_combination_overlap.pdf Graphic file (type pdf)
+
+<use Figures/figure_combination_overlap.pdf>
+Package pdftex.def Info: Figures/figure_combination_overlap.pdf used on input l
+ine 439.
+(pdftex.def)             Requested size: 150.48193pt x 93.29132pt.
+
+<Figures/figure_combination_combine.pdf, id=490, 283.29741pt x 129.29704pt>
+File: Figures/figure_combination_combine.pdf Graphic file (type pdf)
+
+<use Figures/figure_combination_combine.pdf>
+Package pdftex.def Info: Figures/figure_combination_combine.pdf used on input l
+ine 441.
+(pdftex.def)             Requested size: 190.07831pt x 86.75482pt.
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./Figures/figure_combination_overlap.pdf> <./Figures/figure_combination_c
+ombine.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_combination
 _combine.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
->] <Figures/figure3_c.pdf, id=582, 239.80592pt x 141.25572pt>
+>]
+Underfull \hbox (badness 6592) in paragraph at lines 479--480
+[]\OT1/pnc/m/n/10 Second, if a $\OML/cmm/m/it/10 t[]$ \OT1/pnc/m/n/10 is gen-er
+-ated by the com-bi-na-tion of tasks $\OML/cmm/m/it/10 t[]$ \OT1/pnc/m/n/10 and
+ $\OML/cmm/m/it/10 t[]$\OT1/pnc/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 479--480
+\OT1/pnc/m/n/10 then $\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]; 
+t[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]; 
+t[]; t[]\OT1/cmr/m/n/10 )$\OT1/pnc/m/n/10 . Since $\OML/cmm/m/it/10 d\OT1/cmr/m
+/n/10 (\OML/cmm/m/it/10 t[]; t[]; t[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 d\OT1/
+cmr/m/n/10 (\OML/cmm/m/it/10 t[]; t[]\OT1/cmr/m/n/10 )$ \OT1/pnc/m/n/10 is al-w
+ays sat-is-fied, we have
+ []
+
+<Figures/figure3_c.pdf, id=587, 239.80592pt x 141.25572pt>
 File: Figures/figure3_c.pdf Graphic file (type pdf)
 
 <use Figures/figure3_c.pdf>
-Package pdftex.def Info: Figures/figure3_c.pdf used on input line 548.
-(pdftex.def)             Requested size: 102.95782pt x 60.64609pt.
+Package pdftex.def Info: Figures/figure3_c.pdf used on input line 516.
+(pdftex.def)             Requested size: 158.39758pt x 93.30449pt.
 
-<Figures/figure3_d.pdf, id=583, 235.12242pt x 139.09265pt>
+<Figures/figure3_d.pdf, id=588, 235.12242pt x 139.09265pt>
 File: Figures/figure3_d.pdf Graphic file (type pdf)
 
 <use Figures/figure3_d.pdf>
-Package pdftex.def Info: Figures/figure3_d.pdf used on input line 550.
-(pdftex.def)             Requested size: 102.95782pt x 60.90805pt.
- [12]
-Underfull \vbox (badness 6658) has occurred while \output is active []
-
- [13 <./Figures/figure3_c.pdf> <./Figures/figure3_d.pdf
+Package pdftex.def Info: Figures/figure3_d.pdf used on input line 517.
+(pdftex.def)             Requested size: 158.39758pt x 93.70732pt.
+ [13] [14 <./Figures/figure3_c.pdf> <./Figures/figure3_d.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure3_d.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->] <Figures/figure_prune_allocation_1.pdf, id=662, 432.7426pt x 160.74554pt>
+>] <Figures/figure_prune_allocation_1.pdf, id=667, 432.7426pt x 160.74554pt>
 File: Figures/figure_prune_allocation_1.pdf Graphic file (type pdf)
 
 <use Figures/figure_prune_allocation_1.pdf>
 Package pdftex.def Info: Figures/figure_prune_allocation_1.pdf used on input li
-ne 624.
-(pdftex.def)             Requested size: 186.12048pt x 69.1364pt.
+ne 586.
+(pdftex.def)             Requested size: 277.19879pt x 102.97244pt.
 
-<Figures/figure_prune_allocation_2.pdf, id=663, 416.97462pt x 162.05945pt>
+<Figures/figure_prune_allocation_2.pdf, id=668, 416.97462pt x 162.05945pt>
 File: Figures/figure_prune_allocation_2.pdf Graphic file (type pdf)
 
 <use Figures/figure_prune_allocation_2.pdf>
 Package pdftex.def Info: Figures/figure_prune_allocation_2.pdf used on input li
-ne 625.
-(pdftex.def)             Requested size: 186.12048pt x 72.33752pt.
-
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [14 <./Figures/figure_prune_allocation_1.pdf> <./Figures/figure_prune_allocati
-on_2.pdf
+ne 587.
+(pdftex.def)             Requested size: 277.19879pt x 107.73602pt.
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 597.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 597.
+ [15] [16 <./Figures/figure_prune_allocation_1.pdf> <./Figures/figure_prune_all
+ocation_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_prune_alloc
 ation_2.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<Figures/figure_combination_allocation_1.pdf, id=818, 163.5936pt x 149.79663pt>
+<Figures/figure_combination_allocation_1.pdf, id=827, 163.5936pt x 149.79663pt>
 File: Figures/figure_combination_allocation_1.pdf Graphic file (type pdf)
 <use Figures/figure_combination_allocation_1.pdf>
 Package pdftex.def Info: Figures/figure_combination_allocation_1.pdf used on in
-put line 681.
-(pdftex.def)             Requested size: 87.12048pt x 79.77582pt.
+put line 628.
+(pdftex.def)             Requested size: 126.7229pt x 116.0386pt.
 
-<Figures/figure_combination_allocation_2.pdf, id=819, 114.97554pt x 148.48273pt
+<Figures/figure_combination_allocation_2.pdf, id=828, 114.97554pt x 148.48273pt
 >
 File: Figures/figure_combination_allocation_2.pdf Graphic file (type pdf)
  <use Figures/figure_combination_allocation_2.pdf>
 Package pdftex.def Info: Figures/figure_combination_allocation_2.pdf used on in
-put line 683.
-(pdftex.def)             Requested size: 61.37952pt x 79.26866pt.
-
-Underfull \hbox (badness 4316) in paragraph at lines 683--683
-[]\OT1/pnc/m/n/8 (b) The sec-ond
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\OT1/pnc/m/n/8 round of task
- []
-
-[15 <./Figures/figure_combination_allocation_1.pdf> <./Figures/figure_combinati
-on_allocation_2.pdf
+put line 630.
+(pdftex.def)             Requested size: 87.12048pt x 112.51497pt.
+ [17 <./Figures/figure_combination_allocation_1.pdf> <./Figures/figure_combinat
+ion_allocation_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_combination
 _allocation_2.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
->] <Figures/figure_proof_allocation.pdf, id=908, 499.45998pt x 253.83734pt>
+>] <Figures/figure_proof_allocation.pdf, id=916, 499.45998pt x 253.83734pt>
 File: Figures/figure_proof_allocation.pdf Graphic file (type pdf)
 
 <use Figures/figure_proof_allocation.pdf>
 Package pdftex.def Info: Figures/figure_proof_allocation.pdf used on input line
- 738.
-(pdftex.def)             Requested size: 336.60242pt x 171.07329pt.
+ 659.
+(pdftex.def)             Requested size: 396.0pt x 201.26132pt.
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 743.
- [16 <./Figures/figure_proof_allocation.pdf>] <Figures/testbed_image.pdf, id=10
-12, 506.44305pt x 323.72945pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 664.
+ [18 <./Figures/figure_proof_allocation.pdf>] <Figures/testbed_image.pdf, id=10
+20, 506.44305pt x 323.72945pt>
 File: Figures/testbed_image.pdf Graphic file (type pdf)
 
 <use Figures/testbed_image.pdf>
-Package pdftex.def Info: Figures/testbed_image.pdf used on input line 766.
-(pdftex.def)             Requested size: 217.80121pt x 139.2207pt.
+Package pdftex.def Info: Figures/testbed_image.pdf used on input line 674.
+(pdftex.def)             Requested size: 316.80121pt x 202.5033pt.
 
-Underfull \vbox (badness 2418) has occurred while \output is active []
-
- [17 <./Figures/testbed_image.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation1_data_s
 ampled_tasks.pdf): PDF inclusion: found PDF version <1.6>, but at most version 
 <1.5> allowed
 
-<Figures/evaluation1_data_sampled_tasks.pdf, id=1023, 236.68324pt x 237.4191pt>
+<Figures/evaluation1_data_sampled_tasks.pdf, id=1021, 236.68324pt x 237.4191pt>
 File: Figures/evaluation1_data_sampled_tasks.pdf Graphic file (type pdf)
 <use Figures/evaluation1_data_sampled_tasks.pdf>
 Package pdftex.def Info: Figures/evaluation1_data_sampled_tasks.pdf used on inp
-ut line 789.
-(pdftex.def)             Requested size: 92.26868pt x 92.5532pt.
+ut line 681.
+(pdftex.def)             Requested size: 93.06024pt x 93.3502pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation1_data_s
 ampled_interval.pdf): PDF inclusion: found PDF version <1.6>, but at most versi
 on <1.5> allowed
 
-<Figures/evaluation1_data_sampled_interval.pdf, id=1024, 237.4481pt x 240.43999
+<Figures/evaluation1_data_sampled_interval.pdf, id=1022, 237.4481pt x 240.43999
 pt>
 File: Figures/evaluation1_data_sampled_interval.pdf Graphic file (type pdf)
  <use Figures/evaluation1_data_sampled_interval.pdf>
 Package pdftex.def Info: Figures/evaluation1_data_sampled_interval.pdf used on 
-input line 790.
-(pdftex.def)             Requested size: 92.26868pt x 93.43001pt.
+input line 681.
+(pdftex.def)             Requested size: 91.86987pt x 93.02644pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation1_voltag
 e.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allow
 ed
-<Figures/evaluation1_voltage.pdf, id=1025, 261.5632pt x 237.2605pt>
+<Figures/evaluation1_voltage.pdf, id=1023, 261.5632pt x 237.2605pt>
 File: Figures/evaluation1_voltage.pdf Graphic file (type pdf)
 
 <use Figures/evaluation1_voltage.pdf>
-Package pdftex.def Info: Figures/evaluation1_voltage.pdf used on input line 791
+Package pdftex.def Info: Figures/evaluation1_voltage.pdf used on input line 682
 .
-(pdftex.def)             Requested size: 102.16626pt x 92.67241pt.
+(pdftex.def)             Requested size: 102.95782pt x 93.38922pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation1_data_l
 oss_rate.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5
 > allowed
-<Figures/evaluation1_data_loss_rate.pdf, id=1026, 257.61203pt x 238.26064pt>
+<Figures/evaluation1_data_loss_rate.pdf, id=1024, 257.61203pt x 238.26064pt>
 File: Figures/evaluation1_data_loss_rate.pdf Graphic file (type pdf)
 
 <use Figures/evaluation1_data_loss_rate.pdf>
 Package pdftex.def Info: Figures/evaluation1_data_loss_rate.pdf used on input l
-ine 791.
-(pdftex.def)             Requested size: 99.79156pt x 92.29596pt.
- [18 <./Figures/evaluation1_data_sampled_tasks.pdf> <./Figures/evaluation1_data
-_sampled_interval.pdf> <./Figures/evaluation1_voltage.pdf> <./Figures/evaluatio
-n1_data_loss_rate.pdf>]
+ine 684.
+(pdftex.def)             Requested size: 99.1994pt x 91.74698pt.
+
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation2_data_s
 ampled_tasks.pdf): PDF inclusion: found PDF version <1.6>, but at most version 
 <1.5> allowed
 
-<Figures/evaluation2_data_sampled_tasks.pdf, id=1054, 255.87625pt x 236.99593pt
+<Figures/evaluation2_data_sampled_tasks.pdf, id=1025, 255.87625pt x 236.99593pt
 >
 File: Figures/evaluation2_data_sampled_tasks.pdf Graphic file (type pdf)
  <use Figures/evaluation2_data_sampled_tasks.pdf>
 Package pdftex.def Info: Figures/evaluation2_data_sampled_tasks.pdf used on inp
-ut line 809.
-(pdftex.def)             Requested size: 100.58313pt x 93.15851pt.
+ut line 691.
+(pdftex.def)             Requested size: 99.0pt x 91.69392pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation2_data_s
 ampled_r.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5
 > allowed
-<Figures/evaluation2_data_sampled_r.pdf, id=1055, 255.21046pt x 238.0637pt>
+<Figures/evaluation2_data_sampled_r.pdf, id=1026, 255.21046pt x 238.0637pt>
 File: Figures/evaluation2_data_sampled_r.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_data_sampled_r.pdf>
 Package pdftex.def Info: Figures/evaluation2_data_sampled_r.pdf used on input l
-ine 810.
-(pdftex.def)             Requested size: 99.79156pt x 93.08784pt.
+ine 692.
+(pdftex.def)             Requested size: 99.0pt x 92.35043pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation2_optima
 l1.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allo
 wed
-<Figures/evaluation2_optimal1.pdf, id=1056, 238.34145pt x 237.2057pt>
+<Figures/evaluation2_optimal1.pdf, id=1027, 238.34145pt x 237.2057pt>
 File: Figures/evaluation2_optimal1.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_optimal1.pdf>
-Package pdftex.def Info: Figures/evaluation2_optimal1.pdf used on input line 81
-1.
-(pdftex.def)             Requested size: 92.66144pt x 92.22028pt.
+Package pdftex.def Info: Figures/evaluation2_optimal1.pdf used on input line 69
+3.
+(pdftex.def)             Requested size: 93.25964pt x 92.81387pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation2_optima
 l2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allo
 wed
-<Figures/evaluation2_optimal2.pdf, id=1057, 237.4481pt x 235.95242pt>
+<Figures/evaluation2_optimal2.pdf, id=1028, 237.4481pt x 235.95242pt>
 File: Figures/evaluation2_optimal2.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_optimal2.pdf>
-Package pdftex.def Info: Figures/evaluation2_optimal2.pdf used on input line 81
-2.
-(pdftex.def)             Requested size: 93.453pt x 92.86354pt.
+Package pdftex.def Info: Figures/evaluation2_optimal2.pdf used on input line 69
+4.
+(pdftex.def)             Requested size: 93.6524pt x 93.06155pt.
+ [19 <./Figures/testbed_image.pdf> <./Figures/evaluation1_data_sampled_tasks.pd
+f> <./Figures/evaluation1_data_sampled_interval.pdf> <./Figures/evaluation1_vol
+tage.pdf> <./Figures/evaluation1_data_loss_rate.pdf>]
+Underfull \vbox (badness 2181) has occurred while \output is active []
 
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
- [19 <./Figures/evaluation2_data_sampled_tasks.pdf> <./Figures/evaluation2_data
+ [20 <./Figures/evaluation2_data_sampled_tasks.pdf> <./Figures/evaluation2_data
 _sampled_r.pdf> <./Figures/evaluation2_optimal1.pdf> <./Figures/evaluation2_opt
 imal2.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation2_data_l
 oss_rate.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5
 > allowed
-<Figures/evaluation2_data_loss_rate.pdf, id=1086, 257.58585pt x 236.75842pt>
+<Figures/evaluation2_data_loss_rate.pdf, id=1091, 257.58585pt x 236.75842pt>
 File: Figures/evaluation2_data_loss_rate.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_data_loss_rate.pdf>
 Package pdftex.def Info: Figures/evaluation2_data_loss_rate.pdf used on input l
-ine 833.
-(pdftex.def)             Requested size: 101.3747pt x 93.17715pt.
+ine 729.
+(pdftex.def)             Requested size: 97.01807pt x 89.17435pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation3_receiv
 ed_data.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5>
  allowed
-<Figures/evaluation3_received_data.pdf, id=1087, 255.47426pt x 237.79991pt>
+<Figures/evaluation3_received_data.pdf, id=1092, 255.47426pt x 237.79991pt>
 File: Figures/evaluation3_received_data.pdf Graphic file (type pdf)
 
 <use Figures/evaluation3_received_data.pdf>
 Package pdftex.def Info: Figures/evaluation3_received_data.pdf used on input li
-ne 834.
-(pdftex.def)             Requested size: 100.98193pt x 93.99706pt.
+ne 730.
+(pdftex.def)             Requested size: 97.01807pt x 90.30684pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/evaluation3_data_l
 oss_rate.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5
 > allowed
-<Figures/evaluation3_data_loss_rate.pdf, id=1088, 252.26094pt x 237.39761pt>
+<Figures/evaluation3_data_loss_rate.pdf, id=1093, 252.26094pt x 237.39761pt>
 File: Figures/evaluation3_data_loss_rate.pdf Graphic file (type pdf)
 
 <use Figures/evaluation3_data_loss_rate.pdf>
 Package pdftex.def Info: Figures/evaluation3_data_loss_rate.pdf used on input l
-ine 835.
-(pdftex.def)             Requested size: 100.98193pt x 95.0298pt.
+ine 731.
+(pdftex.def)             Requested size: 97.41687pt x 91.67546pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<Figures/figure_appendix.pdf, id=1094, 797.57875pt x 344.03831pt>
+File: Figures/figure_appendix.pdf Graphic file (type pdf)
 
- [20 <./Figures/evaluation2_data_loss_rate.pdf> <./Figures/evaluation3_received
-_data.pdf> <./Figures/evaluation3_data_loss_rate.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
+<use Figures/figure_appendix.pdf>
+Package pdftex.def Info: Figures/figure_appendix.pdf used on input line 738.
+(pdftex.def)             Requested size: 396.0pt x 170.81656pt.
+ [21] [22 <./Figures/evaluation2_data_loss_rate.pdf> <./Figures/evaluation3_rec
+eived_data.pdf> <./Figures/evaluation3_data_loss_rate.pdf> <./Figures/figure_ap
+pendix.pdf>] [23]
 (./Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_
-Sampling_in_WSNs.bbl [22]) [23]
+Sampling_in_WSNs.bbl
+Underfull \vbox (badness 4084) has occurred while \output is active []
+
+ [24])
+[25]
 (./Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_
 Sampling_in_WSNs.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5865 strings out of 493089
- 84645 string characters out of 6134842
- 178587 words of memory out of 5000000
- 9177 multiletter control sequences out of 15000+600000
- 36305 words of font info for 86 fonts, out of 8000000 for 9000
+ 5881 strings out of 493089
+ 84975 string characters out of 6134842
+ 179771 words of memory out of 5000000
+ 9190 multiletter control sequences out of 15000+600000
+ 38064 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,17n,36p,2443b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,17n,36p,2218b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntr
-sbk/uncb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/unc
-r8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pf
-b>
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/h
+elvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk
+/uncb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
 Output written on Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing
-_Interval_Data_Sampling_in_WSNs.pdf (23 pages, 1395400 bytes).
+_Interval_Data_Sampling_in_WSNs.pdf (25 pages, 1426039 bytes).
 PDF statistics:
- 1202 PDF objects out of 1440 (max. 8388607)
- 486 compressed objects within 5 object streams
+ 1227 PDF objects out of 1440 (max. 8388607)
+ 505 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

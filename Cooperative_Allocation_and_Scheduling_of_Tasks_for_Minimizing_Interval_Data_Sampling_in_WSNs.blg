@@ -1,15 +1,24 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_Sampling_in_WSNs.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_Sampling_in_WSNs.aux
 The style file: ACM-Reference-Format-Journals.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: reference.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty publisher in 2003_PINCO
 Warning--empty address in 2003_PINCO
 Warning--empty publisher in 1994MACAW
+Warning--no number and no volume in 2014_energy_efficient
+Warning--page numbers missing in both pages and numpages fields in 2014_energy_efficient
+Warning--empty address in max_dhp
 Warning--empty publisher in 2013fang
 Warning--empty publisher in 2005_coverage_problem
 Warning--require articleno with numpages field in 2005_coverage_problem
 Warning--empty publisher in 2009_oceansense
 Warning--empty publisher in 2003_TOSSIM
-Warning--empty publisher in 2007_undergroundMonitoring
+Warning--empty publisher in 2012_CitySee_infocom
+Warning--empty address in 2012_CitySee_infocom
 Warning--empty publisher in 2009greenorbs
 Warning--require articleno with numpages field in 2009greenorbs
 Warning--empty publisher in 2007_outlier_detection_mobihoc
@@ -25,4 +34,45 @@ Warning--empty address in 2007_two_tier_icdcs
 Warning--empty publisher in 2004structuralMonitoring
 Warning--empty publisher in 2010_near_optimal_mobihoc
 Warning--empty address in 2010_near_optimal_mobihoc
-(There were 24 warnings)
+You've used 26 entries,
+            5290 wiz_defined-function locations,
+            1384 strings with 19415 characters,
+and the built_in function-call counts, 29244 in all, are:
+= -- 3372
+> -- 1384
+< -- 0
++ -- 434
+- -- 440
+* -- 2041
+:= -- 3299
+add.period$ -- 131
+call.type$ -- 26
+change.case$ -- 210
+chr.to.int$ -- 26
+cite$ -- 54
+duplicate$ -- 2478
+empty$ -- 1730
+format.name$ -- 536
+if$ -- 7089
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 119
+newline$ -- 225
+num.names$ -- 208
+pop$ -- 1066
+preamble$ -- 1
+purify$ -- 340
+quote$ -- 0
+skip$ -- 681
+stack$ -- 0
+substring$ -- 2075
+swap$ -- 258
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 358
+warning$ -- 28
+while$ -- 164
+width$ -- 0
+write$ -- 470
+(There were 28 warnings)

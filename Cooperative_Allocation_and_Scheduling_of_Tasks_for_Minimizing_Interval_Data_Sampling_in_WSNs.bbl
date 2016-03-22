@@ -64,6 +64,15 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Dalvi}{Dalvi}{2014}]%
+        {2014_energy_efficient}
+{Rashmi Dalvi}. 2014.
+\newblock \showarticletitle{Energy efficient scheduling and allocation of tasks
+  in sensor cloud}.
+\newblock {\em Dissertations \& Theses - Gradworks\/} (2014).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Demirkol, Ersoy, and Alagoz}{Demirkol
   et~al\mbox{.}}{2006}]%
         {2006_MAC_survey}
@@ -71,6 +80,14 @@
 \newblock \showarticletitle{MAC protocols for wireless sensor networks: a
   survey}.
 \newblock {\em IEEE Communications Magazine\/} {44}, 4 (2006), 115--121.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ding-Zhu~Du}{Ding-Zhu~Du}{2012}]%
+        {max_dhp}
+{Xiaodong~Hu Ding-Zhu~Du, Ker-I~Ko}. 2012.
+\newblock {\em Design and Analysis of Approximation Algorithms}.
+\newblock Springer\-Verlag New York.
 \newblock
 
 
@@ -112,15 +129,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Li and Liu}{Li and Liu}{2007}]%
-        {2007_undergroundMonitoring}
-{Mo Li} {and} {Yunhao Liu}. 2007.
-\newblock \showarticletitle{Underground Structure Monitoring with Wireless
-  Sensor Networks}. In {\em Proc. IEEE IPSN}. Cambridge, Massachusetts, USA,
-  69--78.
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{Mao, Liu, Tang, Liu, Han, and Li}{Mao
   et~al\mbox{.}}{2013}]%
         {2013_TPDS_coverage}
@@ -130,6 +138,15 @@
   Wireless Sensor Networks}.
 \newblock {\em IEEE Transactions on Parallel and Distributed Systems\/} {24},
   12 (2013), 2396--2406.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mao, Miao, He, Li, and Liu}{Mao
+  et~al\mbox{.}}{2012}]%
+        {2012_CitySee_infocom}
+{Xufei Mao}, {Xin Miao}, {Yuan He}, {Xiang~Yang Li}, {and} {Yunhao Liu}. 2012.
+\newblock \showarticletitle{CitySee: Urban CO2 monitoring with sensors}. In
+  {\em Proc. IEEE INFOCOM}. 1611--1619.
 \newblock
 
 
@@ -202,6 +219,17 @@
 \newblock \showarticletitle{Habitat Monitoring with Sensor Networks}.
 \newblock {\em Communications of the ACM-Wireless sensor networks\/} {47}, 6
   (2004), 34--40.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tan, Xing, Chen, Song, and Huang}{Tan
+  et~al\mbox{.}}{2013}]%
+        {fusion_based_Tosn}
+{Rui Tan}, {Guoliang Xing}, {Jinzhu Chen}, {Wen~Zhan Song}, {and} {Renjie
+  Huang}. 2013.
+\newblock \showarticletitle{Fusion-based volcanic earthquake detection and
+  timing in wireless sensor networks}.
+\newblock {\em Acm Transactions on Sensor Networks\/} {9}, 2 (2013), 53--55.
 \newblock
 
 
