@@ -34,45 +34,45 @@ Warning--empty address in 2007_two_tier_icdcs
 Warning--empty publisher in 2004structuralMonitoring
 Warning--empty publisher in 2010_near_optimal_mobihoc
 Warning--empty address in 2010_near_optimal_mobihoc
-You've used 26 entries,
+You've used 28 entries,
             5290 wiz_defined-function locations,
-            1384 strings with 19415 characters,
-and the built_in function-call counts, 29244 in all, are:
-= -- 3372
-> -- 1384
+            1398 strings with 19845 characters,
+and the built_in function-call counts, 31790 in all, are:
+= -- 3774
+> -- 1488
 < -- 0
-+ -- 434
-- -- 440
-* -- 2041
-:= -- 3299
-add.period$ -- 131
-call.type$ -- 26
-change.case$ -- 210
-chr.to.int$ -- 26
-cite$ -- 54
-duplicate$ -- 2478
-empty$ -- 1730
-format.name$ -- 536
-if$ -- 7089
++ -- 466
+- -- 472
+* -- 2211
+:= -- 3553
+add.period$ -- 141
+call.type$ -- 28
+change.case$ -- 226
+chr.to.int$ -- 28
+cite$ -- 56
+duplicate$ -- 2664
+empty$ -- 1862
+format.name$ -- 576
+if$ -- 7765
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 119
-newline$ -- 225
-num.names$ -- 208
-pop$ -- 1066
+missing$ -- 127
+newline$ -- 241
+num.names$ -- 224
+pop$ -- 1122
 preamble$ -- 1
-purify$ -- 340
+purify$ -- 366
 quote$ -- 0
-skip$ -- 681
+skip$ -- 743
 stack$ -- 0
-substring$ -- 2075
-swap$ -- 258
+substring$ -- 2275
+swap$ -- 286
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 358
+type$ -- 386
 warning$ -- 28
-while$ -- 164
+while$ -- 176
 width$ -- 0
-write$ -- 470
+write$ -- 504
 (There were 28 warnings)

@@ -129,6 +129,27 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Liu, Yin, Leung, and Cai}{Liu
+  et~al\mbox{.}}{2012}]%
+        {Liu2012ISAR}
+{Qiang Liu}, {Jianping Yin}, {V.~C.~M. Leung}, {and} {Zhiping Cai}. 2012.
+\newblock \showarticletitle{ISAR: Improved Situation-Aware Routing Method for
+  Wireless Mesh Backbones}.
+\newblock {\em IEEE Communications Letters\/} {16}, 9 (2012), 1404--1407.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Liu, Yin, Leung, and Cai}{Liu
+  et~al\mbox{.}}{2013}]%
+        {Liu2013FADE}
+{Qiang Liu}, {Jianping Yin}, {Victor C.~M. Leung}, {and} {Zhiping Cai}. 2013.
+\newblock \showarticletitle{FADE: Forwarding Assessment Based Detection of
+  Collaborative Grey Hole Attacks in WMNs}.
+\newblock {\em IEEE Transactions on Wireless Communications\/} {12}, 10 (2013),
+  5124--5137.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Mao, Liu, Tang, Liu, Han, and Li}{Mao
   et~al\mbox{.}}{2013}]%
         {2013_TPDS_coverage}
