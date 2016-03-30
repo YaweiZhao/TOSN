@@ -1,30 +1,29 @@
 \documentclass[prodmode,acmtosn]{acmsmall}
 
-\usepackage[ruled]{algorithm2e}
-\renewcommand{\algorithmcfname}{ALGORITHM}
-\SetAlFnt{\small}
-\SetAlCapFnt{\small}
-\SetAlCapNameFnt{\small}
-\SetAlCapHSkip{0pt}
-\IncMargin{-\parindent}
+%\usepackage[ruled]{algorithm2e}
+%\renewcommand{\algorithmcfname}{ALGORITHM}
+%\SetAlFnt{\small}
+%\SetAlCapFnt{\small}
+%\SetAlCapNameFnt{\small}
+%\SetAlCapHSkip{0pt}
+%\IncMargin{-\parindent}
 
 
-
-%%\usepackage{appendix}
-%\usepackage{amssymb}
-%\usepackage{algorithm}
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{array}
-%\usepackage{graphicx}
-%\usepackage{pifont}
+\usepackage{appendix}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{pifont}
 \usepackage{epsfig,tabularx,amssymb,amsmath,subfigure,multirow,booktabs}
-%\usepackage{balance}
-%\usepackage{bm}
+\usepackage{balance}
+\usepackage{bm}
 \usepackage[noend]{algpseudocode}
-%\usepackage{epsfig,subfigure}
-%\usepackage{mathptmx}
-%\usepackage{url}
+\usepackage{epsfig,subfigure}
+\usepackage{mathptmx}
+\usepackage{url}
 		
 \begin{document}
 
@@ -43,7 +42,7 @@ Jianping~Yin
 }
 
 \begin{abstract}
-Data sharing amongst multiple sampling tasks  significantly reduces energy consumption and communication cost in low-power WSNs. Conventional proposals have already scheduled the discrete point sampling tasks to decrease the amount of sampled data. However, less effort has been done for the applications which generate continuous interval sampling tasks. Moreover, most of pioneering work limits its view to schedule \emph{sampling interval} of tasks on a single sensor node, and neglects the process of task allocation in WSNs. Therefore, the gained efforts in the prior work cannot benefit a large-scale wireless sensor network because the performance of a scheduling method is sensitive to the strategy of task allocation. Broadening the scope to an entire network, this paper is the first work to maximize data sharing amongst continuous interval sampling tasks by jointly optimizing task allocation and scheduling of \emph{sampling interval}  in WSNs.  First, we formalize the joint optimization problem and prove it NP-hard. Second, we present \emph{COMBINE} operation which is the crucial ingredient of our solution. \emph{COMBINE} is a 2-factor approximate algorithm for maximizing data sharing amongst overlapping tasks.  Furthermore, our heuristic named \emph{CATS} is proposed. \emph{CATS} is 2-factor approximate algorithm for jointly allocating tasks and scheduling \emph{sampling interval} so as  to maximize data sharing in the entire network.  Extensive empirical study is conducted on a testbed of $50$ sensor nodes to evaluate the effectiveness of our methods. Besides, the scalability of our methods is verified by using the widely-used simulation tool, i.e., TOSSIM. The experimental results indicate that our methods successfully reduce the volume of sampled data and decrease the energy consumption significantly.
+Data sharing amongst multiple sampling tasks  significantly reduces energy consumption and communication cost in low-power WSNs. Conventional proposals have already scheduled the discrete point sampling tasks to decrease the amount of sampled data. However, less effort has been done for the applications which generate continuous interval sampling tasks. Moreover, most of pioneering work limits its view to schedule sampling intervals of tasks on a single sensor node, and neglects the process of task allocation in WSNs. Therefore, the gained efforts in the prior work cannot benefit a large-scale wireless sensor network because the performance of a scheduling method is sensitive to the strategy of task allocation. Broadening the scope to an entire network, this paper is the first work to maximize data sharing amongst continuous interval sampling tasks by jointly optimizing task allocation and scheduling of sampling intervals  in WSNs.  First, we formalize the joint optimization problem and prove it NP-hard. Second, we present \emph{COMBINE} operation which is the crucial ingredient of our solution. \emph{COMBINE} is a 2-factor approximate algorithm for maximizing data sharing amongst overlapping tasks.  Furthermore, our heuristic named \emph{CATS} is proposed. \emph{CATS} is 2-factor approximate algorithm for jointly allocating tasks and scheduling sampling intervals so as  to maximize data sharing in the entire network.  Extensive empirical study is conducted on a testbed of $50$ sensor nodes to evaluate the effectiveness of our methods. Besides, the scalability of our methods is verified by using the widely-used simulation tool, i.e., TOSSIM. The experimental results indicate that our methods successfully reduce the volume of sampled data and decrease the energy consumption significantly.
 \end{abstract}
 
 \begin{CCSXML}
@@ -89,34 +88,34 @@ The successful applications of low-power wireless sensor networks under differen
 
 Such data-intensive applications widely exist in monitoring systems. For example, acoustic data is collected to diagnose the state of a railway system \cite{2005acoustic_diagnose_train}. The vibration data, sampled by volcano, earthquake and structure monitoring systems \cite{fusion_based_Tosn,2007sensys_earthquake_monitor,2004structuralMonitoring}, needs to be sampled to detect the anomaly. A further example is that observed data in a wildlife monitoring system can be used to conduct scientific analysis on animals' behavior \cite{2004habitat_monitoring}. As illustrated in Fig. \ref{figure_introduction_allocation}, these applications first generate a large amount of sampling tasks. Then, those sampling tasks will be allocated to certain sensor nodes by a sink node (as indicated by the solid line). Finally, the collected sensor readings are transmitted to the sink node (as indicated by the dotted line) and then are fed into aforementioned applications.
 
-Generally, such a sampling task can be defined as a task model by using two properties: \emph{time window} and \emph{sampling interval}. Either \emph{time window} or \emph{sampling interval} stands for a period of time. As illustrated in Fig. \ref{figure_introduction_scheduling}, \emph{time window} means lifetime of a sampling task. \emph{sampling interval} indicates that this task should be performed to sample data over the time interval continuously. Universally, sampling tasks can be classified into two cases: discrete point sampling tasks and continuous interval sampling tasks. The former is the special case of the task model. The length of \emph{sampling interval} of a discrete point sampling task can be regarded aggressively small so that the task requires to be performed via once data sampling. The latter is a general case. That is, a continuous interval sampling task requires to be performed over a time interval continuously. Moreover, the \emph{sampling interval} of a continuous interval sampling task can be adjusted to move in its \emph{time window} flexibly. In the paper, we focus on the latter, i.e., the continuous interval sampling tasks. \footnote{\noindent For simplicity, ``interval sampling tasks" or ``sampling tasks" or ``tasks" is hereafter referred to as ``continuous interval sampling tasks" without difference.}
+Generally, such a sampling task can be defined as a task model by using two properties: \emph{time window} and \emph{sampling interval}. Either a time window or a sampling interval stands for a period of time. As illustrated in Fig. \ref{figure_introduction_scheduling}, the time window means lifetime of a sampling task. The sampling interval indicates that this task should be performed to sample data over the time interval continuously. Universally, sampling tasks can be classified into two cases: discrete point sampling tasks and continuous interval sampling tasks. The former is the special case of the task model. The length of sampling interval of a discrete point sampling task can be regarded aggressively small so that the task requires to be performed via once data sampling. The latter is a general case. That is, a continuous interval sampling task requires to be performed over a time interval continuously. Moreover, the sampling interval of a continuous interval sampling task can be adjusted to move in its \emph{time window} flexibly. In the paper, we focus on the latter, i.e., the continuous interval sampling tasks. \footnote{\noindent For simplicity, ``interval sampling tasks" or ``sampling tasks" or ``tasks" is hereafter referred to as ``continuous interval sampling tasks" without difference.}
 
 %interval sampling task ÖÐÊý?Ý¹²ÏíµÄÒâÒå
-Note that \emph{time window} of more than one  sampling task  may have overlapping time regions. The \emph{sampling interval} of those tasks  can be adjusted in the overlapping regions of time.  Data, which is sampled in such overlapping regions once, can be shared by multiple tasks simultaneously.  As illustrated in Fig. \ref{figure_introduction_scheduling}, consider three sampling tasks $t_1$, $t_2$ and $t_3$. since the \emph{time window} of $t_2$ and $t_3$ are overlapping, the \emph{sampling interval} of $t_2$ and $t_3$ can be adjusted in the overlapping time region so that data which is sampled in region of data sharing  can be shared by  $t_2$ and $t_3$.  Such a strategy of data sharing is very practical to reduce redundant data sampling and improve the efficiency of WSNs. Moreover, this strategy is extremely important for interval sampling tasks. First, an interval sampling task usually produces a large amount of sampled data each time.  Without such a data sharing strategy, delivering those superfluous sampled data to the sink node will consume more network resources. Second, the execution of those unnecessary data sampling and the transmission of redundant sampled data consume non-trivial energy of the sensor node.
+Note that \emph{time window} of more than one  sampling task  may have overlapping time regions. The sampling intervals of those tasks  can be adjusted in the overlapping regions of time.  Data, which is sampled in such overlapping regions once, can be shared by multiple tasks simultaneously.  As illustrated in Fig. \ref{figure_introduction_scheduling}, consider three sampling tasks $t_1$, $t_2$ and $t_3$. since the \emph{time window} of $t_2$ and $t_3$ are overlapping, the sampling intervals of $t_2$ and $t_3$ can be adjusted in the overlapping time region so that data which is sampled in region of data sharing  can be shared by  $t_2$ and $t_3$.  Such a strategy of data sharing is very practical to reduce redundant data sampling and improve the efficiency of WSNs. Moreover, this strategy is extremely important for interval sampling tasks. First, an interval sampling task usually produces a large amount of sampled data each time.  Without such a data sharing strategy, delivering those superfluous sampled data to the sink node will consume more network resources. Second, the execution of those unnecessary data sampling and the transmission of redundant sampled data consume non-trivial energy of the sensor node.
 
-Generally, given a set of tasks, data sharing exists in the processes of allocation of task and scheduling of \emph{sampling interval}.  \emph{time window} of tasks may be overlapping, when more than one task is allocated to a same sensor node. Accordingly, the \emph{sampling interval} of those tasks should be scheduled into the overlapping regions so as to maximize the gain of data sharing. Both the process of task allocation and the process of scheduling of \emph{sampling interval} are tightly coupled. The strategy of task allocation has a great impact on the performance of the method of scheduling \emph{sampling interval}. If the \emph{time window} of sampling tasks which are allocated to a sensor node are not overlapping, the method of scheduling \emph{sampling interval} cannot exploit data sharing to reduce redundant data sampling.  If the method of scheduling \emph{sampling interval} is not optimal, each sensor node will still produce redundant sampled data. The goal of maximizing data sharing for the entire network cannot be implemented. Therefore, exploiting the benefits of data sharing involves two challenges for WSNs. The first is the allocation strategy of sampling tasks over the entire wireless sensor network. The second is the scheduling of \emph{sampling interval} for a set of tasks which have been allocated to a sensor node. To ease the presentation, we introduce Fig. \ref{figure_introduction} as an illustrative example for the two sub-problems.
+Generally, given a set of tasks, data sharing exists in the processes of allocation of task and scheduling of sampling intervals.  \emph{time window} of tasks may be overlapping, when more than one task is allocated to a same sensor node. Accordingly, the sampling intervals of those tasks should be scheduled into the overlapping regions so as to maximize the gain of data sharing. Both the process of task allocation and the process of scheduling of sampling intervals are tightly coupled. The strategy of task allocation has a great impact on the performance of the method of scheduling sampling intervals. If the \emph{time window} of sampling tasks which are allocated to a sensor node are not overlapping, the method of scheduling sampling intervals cannot exploit data sharing to reduce redundant data sampling.  If the method of scheduling sampling intervals is not optimal, each sensor node will still produce redundant sampled data. The goal of maximizing data sharing for the entire network cannot be implemented. Therefore, exploiting the benefits of data sharing involves two challenges for WSNs. The first is the allocation strategy of sampling tasks over the entire wireless sensor network. The second is the scheduling of sampling intervals for a set of tasks which have been allocated to a sensor node. To ease the presentation, we introduce Fig. \ref{figure_introduction} as an illustrative example for the two sub-problems.
 
 \begin{itemize}
-\item{\bf{Task allocation:}} As demonstrated in Fig. \ref{figure_introduction_allocation}, consider three sensor nodes $s_0$, $s_1$ and $s_2$ in a wireless sensor network. Here, $s_0$ is the sink node which is responsible to allocate sampling tasks to $s_1$ and $s_2$. A data-intensive application injects three sampling tasks  $t_1$, $t_2$ and $t_3$ into the network, as shown in Fig. \ref{figure_introduction_scheduling}. If $t_1$ and $t_2$ have been allocated to $s_1$ and $s_2$, respectively, $t_3$ should be allocated to $s_2$. The reason is that the \emph{time window} of $t_3$ and that of $t_2$ are overlapping and  \emph{sampling interval} of $t_3$ and that of $t_2$ can be adjusted to implement maximal data sharing. The problem of task allocation is NP complete (See Corollary \ref{corollary_allocation} in Section \ref{section_preliminary_problem_analysis}). Consider that extensive data-intensive applications generate a large set of sampling tasks. It is extremely difficult to allocate tasks so as to maximize data sharing with a resource-constrained sensor node.
+\item{\bf{Task allocation:}} As demonstrated in Fig. \ref{figure_introduction_allocation}, consider three sensor nodes $s_0$, $s_1$ and $s_2$ in a wireless sensor network. Here, $s_0$ is the sink node which is responsible to allocate sampling tasks to $s_1$ and $s_2$. A data-intensive application injects three sampling tasks  $t_1$, $t_2$ and $t_3$ into the network, as shown in Fig. \ref{figure_introduction_scheduling}. If $t_1$ and $t_2$ have been allocated to $s_1$ and $s_2$, respectively, $t_3$ should be allocated to $s_2$. The reason is that the \emph{time window} of $t_3$ and that of $t_2$ are overlapping and  sampling interval of $t_3$ and that of $t_2$ can be adjusted to implement maximal data sharing. Consider that extensive data-intensive applications generate a large set of sampling tasks. It is extremely difficult to allocate tasks so as to maximize data sharing with a resource-constrained sensor node.
 
-\item{\bf{Task scheduling:}} As illustrated in Fig. \ref{figure_introduction_scheduling}, consider three sampling tasks $t_1$, $t_2$ and $t_3$ which have been allocated to a same sensor node. Since the \emph{time window} of $t_2$ and $t_3$ have maximal overlapping time region. Sampling intervals of $t_2$ and $t_3$ can be adjusted to achieve maximal data sharing when data is sampled in the overlapping time region. The problem of scheduling \emph{sampling interval} is NP complete (See Corollary \ref{corollary_schedule} in Section \ref{section_preliminary_problem_analysis}). Consider that a sensor node may be allocated numerous sampling tasks in a monitoring system. It is very difficult to solve the scheduling problem in polynomial time with a resource-constrained sensor node.
+\item{\bf{Task scheduling:}} As illustrated in Fig. \ref{figure_introduction_scheduling}, consider three sampling tasks $t_1$, $t_2$ and $t_3$ which have been allocated to a same sensor node. Since the \emph{time window} of $t_2$ and $t_3$ have maximal overlapping time region. Sampling intervals of $t_2$ and $t_3$ can be adjusted to achieve maximal data sharing when data is sampled in the overlapping time region. The problem of scheduling sampling intervals is NP complete (See Corollary \ref{corollary_schedule} in Section \ref{section_preliminary_problem_analysis}). Consider that a sensor node may be allocated numerous sampling tasks in a monitoring system. It is very difficult to solve the scheduling problem in polynomial time with a resource-constrained sensor node.
 \end{itemize}
 
 %Èç¹ûÊÇÑ§Î»ÂÛÎÄ£¬ÄÇÃ?²Î¿?ÎÄÏ×µÄ?ñÊ??ÃÊÇÊ²Ã?
-Although the scheduling problem of \emph{sampling interval} has been studied in \cite{2014_energy_efficient,2010task_optimization,2013fang}, prior methods face at least two weaknesses. First, most of the existing work focuses on the discrete point sampling tasks. The continuous interval sampling tasks cannot benefit from these achievements directly. Second, existing work about the interval sampling tasks just focuses on the scheduling problem on a single node. The proposed effective scheduling method does not work well in WSNs due to lack of task allocation procedure. The main reason is that performance of a scheduling method is dominated by a strategy of task allocation  at the scope of the entire network. We consider and formulate the two problems as a whole, and provide a general and practical solution for a deployed system. To best of our knowledge, this paper is the first work that jointly optimizes both of the allocation and scheduling problems in a large-scale wireless sensor network.
+Although the scheduling problem of sampling intervals has been studied in \cite{2014_energy_efficient,2010task_optimization,2013fang}, prior methods face at least two weaknesses. First, most of the existing work focuses on the discrete point sampling tasks. The continuous interval sampling tasks cannot benefit from these achievements directly. Second, existing work about the interval sampling tasks just focuses on the scheduling problem on a single node. The proposed effective scheduling method does not work well in WSNs due to lack of task allocation procedure. The main reason is that performance of a scheduling method is dominated by a strategy of task allocation  at the scope of the entire network. We consider and formulate the two problems as a whole, and provide a general and practical solution for a deployed system. To best of our knowledge, this paper is the first work that jointly optimizes both of the allocation and scheduling problems in a large-scale wireless sensor network.
 
 \begin{figure}[t]
 \centering
 \subfigure[Task scheduling]{\includegraphics[width=0.45\columnwidth]{Figures/figure_introduction_scheduling}\label{figure_introduction_scheduling}}
 \subfigure[Task allocation]{\includegraphics[width=0.5\columnwidth]{Figures/figure_introduction_allocation}\label{figure_introduction_allocation}}
-\caption{The illustrative examples for the scheduling of \emph{sampling interval} in the left panel and the allocation of tasks in the right panel.} \label{figure_introduction}
+\caption{The illustrative examples for the scheduling of sampling intervals in the left panel and the allocation of tasks in the right panel.} \label{figure_introduction}
 \end{figure}
-%Assume a task set $T$ and $T\mathrm{=}\{t_1,t_2,t_3\}$, $t_2$ and $t_3$ should be allocated to a sensor node and their \emph{sampling interval} should be scheduled to achieve maximal data sharing.
+%Assume a task set $T$ and $T\mathrm{=}\{t_1,t_2,t_3\}$, $t_2$ and $t_3$ should be allocated to a sensor node and their sampling intervals should be scheduled to achieve maximal data sharing.
 In this paper, we focus on maximizing the benefits of data sharing amongst sampling tasks, bearing the view of an entire wireless sensor network rather than a single sensor node. Our contributions are outlined as follows:
 \begin{itemize}
 \item We formulate the allocation and scheduling problems as a joint optimization problem under the $k$-coverage and $r$-redundant network model. The optimization problem is proved to be NP-hard.
 \item We present a crucial ingredient of our solution \emph{COMBINE} which aims to compute the minimal volume of sampled data for a set of overlapping tasks. The rigorous approximation bounds of \emph{COMBINE} is presented theoretically.
-\item We propose our solution named \emph{CATS} which jointly allocates tasks and schedules the \emph{sampling interval} of the tasks on a sensor node to achieve maximal data sharing for WSNs. \emph{CATS} is proved to be a 2-factor approximate algorithm theoretically.
+\item We propose our solution named \emph{CATS} which jointly allocates tasks and schedules the sampling intervals of the tasks on a sensor node to achieve maximal data sharing for WSNs. \emph{CATS} is proved to be a 2-factor approximate algorithm theoretically.
 \item To evaluate the performance of our method, we conduct empirical study using a real testbed containing  $50$ nodes in the form of a $5\mathrm{\times}10$ array. Large-scale simulations are further conducted to evaluate our methods via a widely-used simulation tool for WSNs, i.e., TOSSIM. The evaluation results indicate that our method significantly reduces the amount of sampled data and the energy consumption, and thereby improve the quality of communication in WSNs.
 \end{itemize}
 
@@ -128,7 +127,7 @@ The rest of this paper is organized as follows. Section \ref{section_related_wor
 \subsection{Energy-aware task allocation and scheduling mechanisms in WSNs}
 Xu et al. propose an energy-balanced method of task allocation which implements the maximal energy dissipation amongst all sensor nodes \cite{2010_near_optimal_mobihoc}. The tasks are executed during the beginning of each epoch and must be completed before the end of the epoch. That is, the epoch of a task is same with the time window of the task model in the paper. It is noting that that tasks in \cite{2010_near_optimal_mobihoc} is communication tasks, not the sampling tasks. The difference dominates that the proposed method in \cite{2010_near_optimal_mobihoc} does not suit to our problem. Additionally, the solution for solving an integer linear programming problem in \cite{2010_near_optimal_mobihoc} costs much time, which is prohibitive for a large system. Packets in \cite{2006_time_optimum_mass} owns the same properties of a sampling task we discuss in the paper. Release time and deadline of a packet represents begin time and end time, respectively. The difference is that a packet reports one unit of data, not the data which is sampled over a time interval continuously. Thus, the methods in \cite{2006_time_optimum_mass} work well for the discrete point sampling tasks, not the interval sampling tasks.
 
-The most related work to ours are \cite{2010task_optimization} and \cite{2013fang}. Tavakoli et al. present an approach for task scheduling on a sensor node to minimize network communication overhead \cite{2010task_optimization}. A task in \cite{2010task_optimization} is a discrete point sampling task and requires to be performed via once data sampling during its time window. Therefore, method proposed in \cite{2010task_optimization} does not suit to our problem.  Fang et al.  propose an effective sampling approach for interval sampling tasks on a single sensor node \cite{2013fang}. The $2$-factor approximation algorithm in \cite{2013fang} is the state-of-the-art method to maximize data sharing amongst tasks on a single node. Unfortunately, there are two weak points in \cite{2013fang}. First, the proposed scheduling method schedules sampling tasks in the descending order of the end time of a task, which, as a result, neglects data sharing between overlapping tasks. Moreover, Fang et al. assume that all tasks have a same length of \emph{sampling interval}, which is too ideal and not practical. By contrast, we observe that multiple tasks may be overlapping, and thereby data sharing exists. Our solution exploits this information by designing a crucial operation, namely, \emph{COMBINE}. \emph{COMBINE} achieves better performance on maximizing data sharing than the scheduling method in \cite{2013fang}. Second, the solution in \cite{2013fang} only focuses on task scheduling on a single sensor node, and does not consider the process of task allocation in a wireless sensor network. As we have discussed, the performance of algorithms of task scheduling is sensitive to the strategy of task allocation. Only does optimizing the process of the former not achieve the final optimization for a deployed system. Our solution is more general and practical because of jointly optimizing the process of task allocation and that of scheduling \emph{sampling interval}.
+The most related work to ours are \cite{2010task_optimization} and \cite{2013fang}. Tavakoli et al. present an approach for task scheduling on a sensor node to minimize network communication overhead \cite{2010task_optimization}. A task in \cite{2010task_optimization} is a discrete point sampling task and requires to be performed via once data sampling during its time window. Therefore, method proposed in \cite{2010task_optimization} does not suit to our problem.  Fang et al.  propose an effective sampling approach for interval sampling tasks on a single sensor node \cite{2013fang}. The $2$-factor approximation algorithm in \cite{2013fang} is the state-of-the-art method to maximize data sharing amongst tasks on a single node. Unfortunately, there are two weak points in \cite{2013fang}. First, the proposed scheduling method schedules sampling tasks in the descending order of the end time of a task, which, as a result, neglects data sharing between overlapping tasks. Moreover, Fang et al. assume that all the sampling intervals of  tasks have a same length, which is too ideal and not practical. By contrast, we observe that multiple tasks may be overlapping, and thereby data sharing exists. Our solution exploits this information by designing a crucial operation, namely, \emph{COMBINE}. \emph{COMBINE} achieves better performance on maximizing data sharing than the scheduling method in \cite{2013fang}. Second, the solution in \cite{2013fang} only focuses on task scheduling on a single sensor node, and does not consider the process of task allocation in a wireless sensor network. As we have discussed, the performance of algorithms of task scheduling is sensitive to the strategy of task allocation. Only does optimizing the process of the former not achieve the final optimization for a deployed system. Our solution is more general and practical because of jointly optimizing the process of task allocation and that of scheduling sampling intervals.
 
 \subsection{Multi-query optimization in a  wireless sensor network}
 Recently, a wireless sensor network is treated as a database providing a good logical abstraction for sensor data management. Multi-query optimization in such a database system studies how to efficiently process queries \cite{2007_two_tier_icdcs}, \cite{2005_multi_query}. Xiang et al. adopts a two-tier multiple query optimization scheme to minimize the average transmission time in WSNs \cite{2007_two_tier_icdcs}. The first-tier optimization is a cost-based approach which schedules queries as a whole and eliminates duplicate data requests form original queries. Since it is not the optimization of the volume of sampled data, such an approach cannot be used for our problem. Moreover, the second-tier optimization acquire and transmit sampled data by using the broadcast nature of the radio channel. Our solution aims to provide a general solution for maximizing data sharing amongst sampling tasks. The details of wireless communication is not involved in our method.  Trigoni et al. consider multi-query optimization by using aggregation operations such as \emph{sum} and \emph{avg} to achieve optimal communication cost \cite{2005_multi_query}; while our method mainly concerns minimal energy consumption by reducing redundant sampled data.
@@ -138,7 +137,7 @@ Compression techniques based data collection significantly reduce redundancy of 
 
 \section{Preliminaries}
 \label{section_prelimenary}
-In this section, the basic task and network models are first formalized. We characterize the task allocation and the scheduling of \emph{sampling interval} as a joint optimization problem. Then, we define a dedicated metric for measuring the data sharing. Finally, we prove that the joint optimization problem is NP-hard.
+In this section, the basic task and network models are first formalized. We characterize the task allocation and the scheduling of sampling intervals as a joint optimization problem. Then, we define a dedicated metric for measuring the data sharing. Finally, we prove that the joint optimization problem is NP-hard.
 
 \begin{table}[b]
 \centering
@@ -166,10 +165,10 @@ In this section, the basic task and network models are first formalized. We char
 \label{section_preliminary_problem}
 %\newtheorem{definition}{\bf{Definition}}
 \begin{definition}[Interval sampling task]
-An interval sampling task $t$ is defined as a triple $\mathrm{<}b,e,l\mathrm{>}$ where $b$, $e$ and $l$ represent begin time, end time and length of the \emph{sampling interval} of the task, respectively. The time window is denoted by $[b,\; e]$. The \emph{sampling interval} can flexibly move in the time window. That is, the \emph{sampling interval} can select its beginning time in the time window, as long as its end time does not exceed $e$. The point sampling tasks are the special case when such a point sampling task can be performed by sampling data only once during its time window. \label{task_model}
+An interval sampling task $t$ is defined as a triple $\mathrm{<}b,e,l\mathrm{>}$ where $b$, $e$ and $l$ represent begin time, end time and length of the sampling interval of the task, respectively. The time window is denoted by $[b,\; e]$. The sampling interval can flexibly move in the time window. That is, the sampling interval can select its beginning time in the time window, as long as its end time does not exceed $e$. The point sampling tasks are the special case when such a point sampling task can be performed by sampling data only once during its time window. \label{task_model}
 \end{definition}
 
-As illustrated in Fig. \ref{figure_task_model}, there are two overlapping tasks $t_1\mathrm{=<}b_1,e_1,l_1\mathrm{>}$ and $t_2\mathrm{=<}b_2,e_2,l_2\mathrm{>}$. The \emph{sampling interval} $I$ satisfies the requirements of two tasks, but its interval length  is smaller than the sum of the length of $I_1$ and $I_2$ due to the data sharing between $t_1$ and $t_2$. 
+As illustrated in Fig. \ref{figure_task_model}, there are two overlapping tasks $t_1\mathrm{=<}b_1,e_1,l_1\mathrm{>}$ and $t_2\mathrm{=<}b_2,e_2,l_2\mathrm{>}$. The sampling interval $I$ satisfies the requirements of two tasks, but its interval length  is smaller than the sum of the length of $I_1$ and $I_2$ due to the data sharing between $t_1$ and $t_2$. 
 
 \begin{definition}[$k$-coverage and $r$-redundant network]
 A wireless sensor network can be represented by $\mathrm{<}S,T,k,r\mathrm{>}$. Here, $S$ and $T$ denote the node set and the task set, respectively. $k$ means that a sampling task in the network is detected by $k$ sensor nodes, while only are $r$ out of them identified to execute the task.
@@ -189,7 +188,7 @@ For a $k$-coverage and $r$-redundant network, $k$ is determined during the deplo
 \end{figure}
 
 
-Before presenting the joint optimization problem, we first formalize the problem of task allocation and the problem of scheduling of \emph{sampling interval}. To ease the description, Table \ref{table_symbol} outlines  frequently used symbols throughout the paper.
+Before presenting the joint optimization problem, we first formalize the problem of task allocation and the problem of scheduling of sampling intervals. To ease the description, Table \ref{table_symbol} outlines  frequently used symbols throughout the paper.
 
 \begin{definition}[Overlap]
 There are two sampling intervals $I_1$ and $I_2$. They are overlapping if and only if $I_1\cap I_2\mathrm{\neq} \emptyset $. Similarly, tasks $t_1\mathrm{=<}b_1,e_1,l_1\mathrm{>}$ and $t_2\mathrm{=<}b_2,e_2,l_2\mathrm{>}$ are overlapping if and only if their time windows are overlapping. That is, their time windows $[b_1,e_1]$ and $[b_2,e_2]$  have the common time region.
@@ -206,8 +205,8 @@ Given a task $t$ and a sensor node set $S$, the task set which has been allocate
 $s.t.:\ I_i\subseteq[b_i,e_i],i\mathrm{=}1,...,n;$
 \end{definition}
 
-\begin{definition}[The scheduling of \emph{sampling interval}]
-Given a task set $T$ with $|T|\mathrm{=}n$, the optimization problem of scheduling \emph{sampling interval} of tasks in $T$ is defined as follows:
+\begin{definition}[The scheduling of sampling intervals]
+Given a task set $T$ with $|T|\mathrm{=}n$, the optimization problem of scheduling sampling intervals of tasks in $T$ is defined as follows:
 \begin{equation}
 \min{|\biguplus_{t_i\mathrm{\in}T} I_i|}
 \end{equation}
@@ -218,7 +217,7 @@ $s.t.:\ I_i\subseteq[b_i,e_i],i\mathrm{=}1,...,n;$
 
 %\newtheorem{definition}{\bf{Definition}}
 \begin{definition}
-Given a \emph{sampling interval} $I$, and a $0\mathrm{-}1$ indicator variable $x_{ij}$. If a task $t_i$ is allocated to a node $s_j$, then $x_{ij}\mathrm{=}1$ else $x_{ij}\mathrm{=}0$. We define $x_{ij} \mathrm{\odot} I$ as follows:
+Given a sampling interval $I$, and a $0\mathrm{-}1$ indicator variable $x_{ij}$. If a task $t_i$ is allocated to a node $s_j$, then $x_{ij}\mathrm{=}1$ else $x_{ij}\mathrm{=}0$. We define $x_{ij} \mathrm{\odot} I$ as follows:
 \begin{equation}
 x_{ij} \mathrm{\odot} I \mathrm{=} \left \{ \begin{array}
 {r@{\quad:\quad}l}
@@ -248,10 +247,6 @@ I_{ij}\subseteq[b_i,e_i],i\mathrm{=}1,...,n;\\
 \end{definition}
 
 Unlike point sampling tasks, the length of different sampling intervals varies a lot, and such a sampling interval can be moved in the time window of a task which it belongs to, the scheduling of sampling intervals, the allocation of tasks or the joint optimization problem are extremely difficult. When $r\mathrm{=}k$, we should allocate each task to all candidate sensor nodes. The solution of task allocation is determined solely. Generally, when $0\mathrm{<}r\mathrm{<}k$, the object function is non-linear, which makes the optimization problem become very difficult. This kind of non-linear programming problem has no universal efficient solution. Several methods, including branch and bound techniques, require high computational complexity and are not applied to a wireless sensor node. Considering the limitation of computing and memory resources of sensor nodes, the non-linear programming problem becomes pretty hard to be solved.
-
-
-
-
 
 
 \subsection{Interval data sharing based minimization of the amount of sampled data}
@@ -377,7 +372,7 @@ As the entire process is completed in polynomial time, Lemma \ref{lemma_compute_
 
 \begin{corollary}
 \label{corollary_schedule}
-Given a sampling task set, the problem of scheduling \emph{sampling interval} of tasks is NP complete.
+Given a sampling task set, the problem of scheduling sampling intervals of tasks is NP complete.
 \end{corollary}
 
 %\newtheorem{theorem}{\bf{Theorem}}
@@ -401,38 +396,68 @@ Let $T$ denote a non-empty task set. If $|T|\mathrm{=}1$, the amount of sampled 
 
 Our basic idea is to schedule all tasks in $T$ by iteratively combining the task pair which has the maximal value of data sharing until there are no overlapping tasks in $T$. The whole procedure includes three major steps. First, it computes the combination of all overlapping tasks and gets a quad list $Q$. Second, a quad $q\mathrm{\in} Q$, $q\mathrm{=<}t_i,t_j,t_{ij},d(t_i,t_j)\mathrm{>}$  where $d(t_i,t_j)$ is maximal is found. Second, original tasks $t_i$ and $t_j$ are replaced by the novel task $t_{ij}$ in the task set  $T$. Third, repeat above steps until no overlapping tasks exist. Algorithm \ref{algorithm_combine} presents details and returns a task set which has no overlapping sampling tasks.
 
-
 \begin{algorithm}[t]
-	\SetAlgoNoLine
-	\KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$.}
-	\KwOut{A task set where there are no overlapping tasks.}
-    \caption{COMBINE}
+    \caption{COMBINE$(T)$}
     \label{algorithm_combine}
-    %\begin{algorithmic}[1]
-        sort tasks in $T$ in the descending order of end time\;
-        $Q\mathrm{\leftarrow}$ Pre\_processing $(T)$\;
-        sort quads in $Q$ in the descending order of value of data sharing\;
-        \Repeat {$|T|\mathrm{>}1$ and $T$ contains overlapping tasks}{
-            $t_i\mathrm{=}Q(0).t_i$, $t_j\mathrm{=}Q(0).t_j$, $t_{ij}\mathrm{=}Q(0).t_{ij}$\;
-            insert $t_{ij}$ into $T$ in the ascending order of  end time\;
-            remove $t_i$ and $t_j$ from $T$ and quads which include $t_i$ or $t_j$ from $Q$\;
-        }
-        \Return $T$\;
+    \begin{algorithmic}[1]
+        \Require A task set $T$ and $T\mathrm{\neq}\emptyset$. A quad list $Q$ and $Q\mathrm{=}\emptyset$.
+        \State sort tasks in $T$ in the descending order of end time.
+        \State $Q\mathrm{\leftarrow}$ PRE\_PROCESSING$(T)$.
+        \State sort quads in $Q$ in the descending order of value of data sharing.
+        \While {$|T|\mathrm{>}1$ and $T$ contains overlapping tasks}
+            \State $t_i\mathrm{=}Q(0).t_i$, $t_j\mathrm{=}Q(0).t_j$, $t_{ij}\mathrm{=}Q(0).t_{ij}$.
+            \State insert $t_{ij}$ into $T$ in the order of  end time.
+            \State remove $t_i$ and $t_j$ from $T$ and quads which include $t_i$ or $t_j$ from $Q$.
+        \EndWhile
+        \Return $T$.
 
-        \textbf{Function:} Pre\_processing ($T$)\\
+        \Function{Pre\_processing}{$T$}
+        \For {each task $t_i$ in $T$}
+            \For {each task $t_j\mathrm{\in} T\mathrm{-}\{t_i\}$}
+                \If {$t_i$ is overlapping with $t_j$}
+                    \State a quad $q$ is generated with $q\mathrm{=}\mathrm{<}t_i,t_j,t_{ij},d(t_i,t_j)\mathrm{>}$.
+                    \State $Q \mathrm{\leftarrow}
+                    Q\mathrm{\bigcup}\{q\}$.
+                \EndIf
+            \EndFor
+        \EndFor
+        \Return $Q$.
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
+
+
+%\begin{algorithm}[t]
+%	%\SetAlgoNoLine
+%	\KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$.}
+%	\KwOut{A task set where there are no overlapping tasks.}
+%    \caption{COMBINE}
+%    \label{algorithm_combine}
+%    %\begin{algorithmic}[1]
+%        sort tasks in $T$ in the descending order of end time\;
+%        $Q\mathrm{\leftarrow}$ Pre\_processing $(T)$\;
+%        sort quads in $Q$ in the descending order of value of data sharing\;
+%        \For {$|T|\mathrm{>}1$ and $T$ contains overlapping tasks}{
+%            $t_i\mathrm{=}Q(0).t_i$, $t_j\mathrm{=}Q(0).t_j$, $t_{ij}\mathrm{=}Q(0).t_{ij}$\;
+%            insert $t_{ij}$ into $T$ in the ascending order of  end time\;
+%            remove $t_i$ and $t_j$ from $T$ and quads which include $t_i$ or $t_j$ from $Q$\;
+%        }
+%        \Return $T$\;
+%
+%        \textbf{Function:} Pre\_processing ($T$)\\
 %            \KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$.}
 %	        \KwOut{A quad list where each quad consists of two overlapping tasks.}
-        \Repeat {each task $t_i$ in $T$}{
-            \Repeat {each task $t_j\mathrm{\in} T\mathrm{-}\{t_i\}$}{
-                \If {$t_i$ is overlapping with $t_j$}
-                    {a quad $q$ is generated with $q\mathrm{=}\mathrm{<}t_i,t_j,t_{ij},d(t_i,t_j)\mathrm{>}$\;
-                   $Q \mathrm{\leftarrow}Q\mathrm{\bigcup}\{q\}$\;}
-            }
-        }
-        \Return $Q$\;
+%        \For {each task $t_i$ in $T$}{
+%            \For {each task $t_j\mathrm{\in} T\mathrm{-}\{t_i\}$}{
+%                \If {$t_i$ is overlapping with $t_j$}
+%                    {a quad $q$ is generated with $q\mathrm{=}\mathrm{<}t_i,t_j,t_{ij},d(t_i,t_j)\mathrm{>}$\;
+%                   $Q \mathrm{\leftarrow}Q\mathrm{\bigcup}\{q\}$\;}
+%            }
+%        }
+%        \Return $Q$\;
 %        \EndFunction
-    %\end{algorithmic}
-\end{algorithm}
+%    %\end{algorithmic}
+%\end{algorithm}
 
 \begin{figure}[t]
 \centering
@@ -443,28 +468,46 @@ Our basic idea is to schedule all tasks in $T$ by iteratively combining the task
 \label{figure_combination}
 \end{figure}
 
-Algorithm \ref{algorithm_combine} performs an iterative operation. Lines $1\mathrm{-}3$ initialize a quad list $Q$, and sort the quad list in the descending order of $d(t_i,t_j)$. It consumes $O(n^2)$ memory to maintain the quad list. The time complexity is $O(n^2)$ due to the computation of  maximal value of data sharing. Lines $4\mathrm{-}7$  find a task pair which has the maximal value of data sharing in the task set $T$, and then update $T$ and $Q$.  As showed in Fig. \ref{figure_combination}, three tasks are notated by $t_1\mathrm{=<}0,5,4\mathrm{>}$, $t_2\mathrm{=<}1,7,4\mathrm{>}$ and $t_3\mathrm{=<}4,9,2\mathrm{>}$. First, we compute the length of the overlapping intervals and find that $t_1$ and $t_2$ have the maximal value of data sharing $d(t_1,t_2)\mathrm{=}4$. Then, $t_1$ and $t_2$ are selected to construct a novel task $t_{12}\mathrm{=<}1,5,4\mathrm{>}$. Second, remove $t_1$ and $t_2$ from $T$ and add $t_{12}$ into $T$.  We get a novel task, i.e., $\mathrm{<}1,6,5\mathrm{>}$ after combining $t_{12}$ and $t_3$. So the final \emph{sampling interval} is $[1,6]$, and the amount of sampled data is $5$.
+Algorithm \ref{algorithm_combine} performs an iterative operation. Lines $1\mathrm{-}3$ initialize a quad list $Q$, and sort the quad list in the descending order of $d(t_i,t_j)$. It consumes $O(n^2)$ memory to maintain the quad list. The time complexity is $O(n^2)$ due to the computation of  maximal value of data sharing. Lines $4\mathrm{-}7$  find a task pair which has the maximal value of data sharing in the task set $T$, and then update $T$ and $Q$.  As showed in Fig. \ref{figure_combination}, three tasks are notated by $t_1\mathrm{=<}0,5,4\mathrm{>}$, $t_2\mathrm{=<}1,7,4\mathrm{>}$ and $t_3\mathrm{=<}4,9,2\mathrm{>}$. First, we compute the length of the overlapping intervals and find that $t_1$ and $t_2$ have the maximal value of data sharing $d(t_1,t_2)\mathrm{=}4$. Then, $t_1$ and $t_2$ are selected to construct a novel task $t_{12}\mathrm{=<}1,5,4\mathrm{>}$. Second, remove $t_1$ and $t_2$ from $T$ and add $t_{12}$ into $T$.  We get a novel task, i.e., $\mathrm{<}1,6,5\mathrm{>}$ after combining $t_{12}$ and $t_3$. So the final sampling interval is $[1,6]$, and the amount of sampled data is $5$.
 
 
 
 Note that both the space complexity and time complexity of Algorithm \ref{algorithm_combine} are $O(n^2)$. Consider that the memory resource is very rare for a wireless sensor node. Algorithm \ref{algorithm_combine} costs $O(n^2)$ space complexity because of maintaining a quad list. To address this problem, we further propose Algorithm \ref{algorithm_combine2} whose space complexity is $O(n)$ and time complexity is $O(n^2)$.  It exhibits the same performance with Algorithm \ref{algorithm_combine}, but significantly reduces the memory consumption. Algorithm \ref{algorithm_combine} is proved to be a 2-factor approximation algorithm by Theorem \ref{theorem_schedule}. Before presenting Theorem \ref{theorem_schedule}, we first present Lemma \ref{lemma2} and Property \ref{property1} which will be used in the proof of Theorem \ref{theorem_schedule}.
 
 \begin{algorithm}[t]
-	\SetAlgoNoLine
-	\KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$.}
-	\KwOut{A task set where there are no overlapping tasks.}
-    \caption{COMBINE\_2}
+    \caption{COMBINE\_2$(T)$}
     \label{algorithm_combine2}
-    %\begin{algorithmic}[1]
-        sort tasks in $T$ in the ascending order of end time\;
-        \Repeat {$|T|\mathrm{>}1$ and $T$ contains overlapping tasks}{
-            find a task pair $\mathrm{<}t_i,t_j\mathrm{>}$ with the maximal overlap\;
-            insert the resultant task, i.e.,  $t=t_{ij}$ into $T$ in the ascending order of end time\;
-            remove $t_i$ and $t_j$ from $T$\;
-        }
-        return $T$\;
-    %\end{algorithmic}
+    \begin{algorithmic}[1]
+        \Require A task set $T$ and $T\mathrm{\neq}\emptyset$.
+        \State sort tasks in $T$ in the descending order of end time.
+        \While {$|T|\mathrm{>}1$}
+            \State find a task pair $\mathrm{<}t_i,t_j\mathrm{>}$ which has the maximal value of data sharing.
+            \If {$d(t_i,t_j)\mathrm{==}0$}
+            \State return $T$.
+            \EndIf
+            \State insert a novel task $t_{ij}$ into $T$ in the descending order of end time. Here, $t_{ij} \mathrm{\leftarrow} t_i\mathrm{\otimes} t_j$ .
+            \State remove $t_i$ and $t_j$ from $T$.
+        \EndWhile
+        \State return $T$.
+    \end{algorithmic}
 \end{algorithm}
+
+%\begin{algorithm}[t]
+%	%\SetAlgoNoLine
+%	\KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$.}
+%	\KwOut{A task set where there are no overlapping tasks.}
+%    \caption{COMBINE\_2}
+%    \label{algorithm_combine2}
+%    %\begin{algorithmic}[1]
+%        sort tasks in $T$ in the ascending order of end time\;
+%        \For {$|T|\mathrm{>}1$ and $T$ contains overlapping tasks}{
+%            find a task pair $\mathrm{<}t_i,t_j\mathrm{>}$ with the maximal overlap\;
+%            insert the resultant task, i.e.,  $t=t_{ij}$ into $T$ in the ascending order of end time\;
+%            remove $t_i$ and $t_j$ from $T$\;
+%        }
+%        return $T$\;
+%    %\end{algorithmic}
+%\end{algorithm}
 
 \begin{lemma}
 \label{lemma2}
@@ -527,7 +570,7 @@ Algorithm \ref{algorithm_combine} is a 2-factor approximation algorithm to compu
 \begin{proof}
 For a non-empty task set $T$, if $|T|\mathrm{=}1$,  Algorithm \ref{algorithm_combine} returns the only one sampling task which is the optimal result.
 
-When $|T|\mathrm{>} 1$, assume $I_i$ and $I_j$ are  the corresponding sampling intervals of tasks $t_i$ and $t_j$, respectively. $t_i$ and $t_j$ are overlapping.  $I^{T'}$ is the \emph{sampling interval} of a task set which is notated by $T'$ and $T'\mathrm{=}T\mathrm{-}\{t_i,t_j\}$. Considering a task $t_i$, in the worst case,  Algorithm \ref{algorithm_combine}  returns an interval length  $|I_i \mathrm{\uplus} I_j \mathrm{\uplus} I^{T'}|$ as illustrated in Fig. \ref{figure3_c}. However, there exists an optimal algorithm which derives an interval length $|I_i \mathrm{\uplus} I^{T'}|$ as illustrated in Fig. \ref{figure3_d}. Therefore, we have:
+When $|T|\mathrm{>} 1$, assume $I_i$ and $I_j$ are  the corresponding sampling intervals of tasks $t_i$ and $t_j$, respectively. $t_i$ and $t_j$ are overlapping.  $I^{T'}$ is the sampling intervals of a task set which is notated by $T'$ and $T'\mathrm{=}T\mathrm{-}\{t_i,t_j\}$. Considering a task $t_i$, in the worst case,  Algorithm \ref{algorithm_combine}  returns an interval length  $|I_i \mathrm{\uplus} I_j \mathrm{\uplus} I^{T'}|$ as illustrated in Fig. \ref{figure3_c}. However, there exists an optimal algorithm which derives an interval length $|I_i \mathrm{\uplus} I^{T'}|$ as illustrated in Fig. \ref{figure3_d}. Therefore, we have:
 \begin{equation}
 \begin{array}{lcl}
 \frac{\displaystyle GREEDY(T)}{\displaystyle OPT(T)}&=&\frac{\displaystyle |I_i \uplus I_j \uplus I^{T'}|}{\displaystyle |I_i \uplus I^{T'}|}\\
@@ -560,25 +603,47 @@ For a task set, the insight of the random method is to randomly identify $r$ out
 \subsection{Maximizing data sharing of tasks according to the pruning method}
 
 \begin{algorithm}[t]
-	\SetAlgoNoLine
-	\KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$. A sensor node set $S$ and $S\mathrm{\neq}\emptyset$. $1\mathrm{\le} i \mathrm{\le} m$. $r\mathrm{\le} k$.}
-	\KwOut{A task set where there are no overlapping tasks.}
-    \caption{PRUNE}
+    \caption{PRUNE$(T,S,k,r)$}
     \label{allocation_prune}
-    %\begin{algorithmic}[1]
-        \Repeat {$T \mathrm{\neq} \emptyset$}{
-            allocate a task $t$, $t \mathrm{\in} T$  to $k$ candidate sensor nodes\;
-            compute the value of  data sharing $d(t,\cdot)$ between $t$ and any other tasks on a sensor node\;
-            \eIf {no sampling task is overlapping with $t$}
-                {randomly allocate $t$ to one candidate sensor node\;}
-                {remove the task $t$ from a candidate sensor node when $t$ has the smallest value of data sharing  with other  tasks on the node\;}
-            $t.count\mathrm{=}t.count\mathrm{-}1$\;
+    \begin{algorithmic}[1]
+        \Require A task set $T$ and $T\mathrm{\neq}\emptyset$. A sensor node set $S$ and $S\mathrm{\neq}\emptyset$. $1\mathrm{\le} i \mathrm{\le} m$. $r\mathrm{\le} k$.
+        \While {$T \mathrm{\neq} \emptyset$}
+            \State allocate a task $t$, $t \mathrm{\in} T$  to $k$ candidate sensor nodes.
+            \State compute the value of  data sharing $d(t,\cdot)$ between $t$ and any other tasks on a sensor node.
+            \If {no sampling task is overlapping with $t$}
+                \State randomly allocate $t$ to one candidate sensor node.
+            \Else
+            \State remove the task $t$ from a candidate sensor node when $t$ has the smallest value of data sharing  with other  tasks on the node.
+            \EndIf
+            \State $t.count\mathrm{=}t.count\mathrm{-}1$.
             \If {$t.count\mathrm{==} r$}
-                {remove $t$ from $T$\;}
-        }
-        \textbf{COMBINE($T_i$)} for each task subset $T_i$\;
-    %\end{algorithmic}
+                \State remove $t$ from $T$.
+            \EndIf
+        \EndWhile
+        \State \textbf{COMBINE($T_i$)} for each task subset $T_i$.
+    \end{algorithmic}
 \end{algorithm}
+
+%\begin{algorithm}[t]
+%	%\SetAlgoNoLine
+%	\KwIn{A task set $T$ and $T\mathrm{\neq}\emptyset$. A sensor node set $S$ and $S\mathrm{\neq}\emptyset$. $1\mathrm{\le} i \mathrm{\le} m$. $r\mathrm{\le} k$.}
+%	\KwOut{A task set where there are no overlapping tasks.}
+%    \caption{PRUNE}
+%    \label{allocation_prune}
+%    %\begin{algorithmic}[1]
+%        \For {$T \mathrm{\neq} \emptyset$}{
+%            allocate a task $t$, $t \mathrm{\in} T$  to $k$ candidate sensor nodes\;
+%            compute the value of  data sharing $d(t,\cdot)$ between $t$ and any other tasks on a sensor node\;
+%            \eIf {no sampling task is overlapping with $t$}
+%                {randomly allocate $t$ to one candidate sensor node\;}
+%                {remove the task $t$ from a candidate sensor node when $t$ has the smallest value of data sharing  with other  tasks on the node\;}
+%            $t.count\mathrm{=}t.count\mathrm{-}1$\;
+%            \If {$t.count\mathrm{==} r$}
+%                {remove $t$ from $T$\;}
+%        }
+%        \textbf{COMBINE($T_i$)} for each task subset $T_i$\;
+%    %\end{algorithmic}
+%\end{algorithm}
 We notice that the sampled data can be shared in the overlapping time region. Therefore, we consider allocating tasks via pruning operation which removes unreasonable allocation choices repeatedly. The entire process contains three major steps. First, we allocate tasks to all candidate sensor nodes. That is, if a task is detected by $k$ sensor nodes, it is allocated to the $k$ candidate sensor nodes. Second, compute the maximal value of data sharing between a task and other overlapping tasks. Then remove a task from a sensor node where the task has the smallest value of data sharing with other tasks until it is allocated to $r$ sensor nodes. Finally, compute the total length of sampling intervals. Algorithm \ref{allocation_prune} describes more details.
 
 \begin{figure}[t]
@@ -592,33 +657,56 @@ We notice that the sampled data can be shared in the overlapping time region. Th
 
 In Algorithm \ref{allocation_prune}, lines $1\mathrm{-}3$ allocate a task to its $k$ candidate sensor nodes.  Lines $4\mathrm{-}10$ check whether a task has been removed from $k\mathrm{-}r$ candidate sensor nodes. Line $11$ computes the final sampled data for each sensor node using Algorithm \ref{algorithm_combine}. In the worst case, if Algorithm \ref{algorithm_combine} is used to compute the volume of sampled data, the time complexity of Algorithm \ref{allocation_prune} is $O(n^2)$, and the space complexity is $O(n^2)$. If Algorithm \ref{algorithm_combine2} is used to compute the sampling time, then the space complexity of Algorithm \ref{allocation_prune} is $O(n)$ because each a task maintains a list of value of data sharing with other tasks.
 
-Algorithm \ref{allocation_prune} is a greedy algorithm. A typical  example is showed in Fig. \ref{figure_prune_example}. Here, $k\mathrm{=}3$ and $r\mathrm{=}2$. The sensor node set is notated by $S$ and $S\mathrm{=}\{s_1,s_2,s_3\}$. The task set is notated by $T$ and $T\mathrm{=}\{t_1,t_2,t_3,t_4\}$. As illustrated in Fig. \ref{figure_prune_example}, the left panel demonstrates the computation of data sharing by Algorithm \ref{allocation_prune} and the optimal method.  Four rectangles in the right panel stand for the tasks in the left panel. The pruning method first allocates all the sampling tasks to candidate nodes, and then removes the tasks which have smallest volume of data sharing with other tasks (indicated in dotted polygon). Finally, Algorithm \ref{allocation_prune} returns the total length of sampling intervals: $8l$ as showed in Fig. \ref{figure_prune_allocation_1}, while the optimal result is $6.5l$ as showed in Fig. \ref{figure_prune_allocation_2}. The reason is that our pruning procedure is not optimal in each round. This motivates us to propose Algorithm \ref{allocation_combine} which allocates tasks according to the \emph{COMBINE} operation and can be optimal in each round.
+Algorithm \ref{allocation_prune} is a greedy algorithm. A typical  example is showed in Fig. \ref{figure_prune_example}. Here, $k\mathrm{=}3$ and $r\mathrm{=}2$. The sensor node set is notated by $S$ and $S\mathrm{=}\{s_1,s_2,s_3\}$. The task set is notated by $T$ and $T\mathrm{=}\{t_1,t_2,t_3,t_4\}$. As illustrated in Fig. \ref{figure_prune_example}, the left panel demonstrates the computation of data sharing by Algorithm \ref{allocation_prune} and the optimal method.  Four rectangles in the right panel stand for the tasks in the left panel. The pruning method first allocates all the sampling tasks to candidate nodes, and then removes the tasks which have smallest volume of data sharing with other tasks (indicated in dotted polygon). Finally, Algorithm \ref{allocation_prune} returns the total length of the sampling intervals: $8l$ as showed in Fig. \ref{figure_prune_allocation_1}, while the optimal result is $6.5l$ as showed in Fig. \ref{figure_prune_allocation_2}. The reason is that our pruning procedure is not optimal in each round. This motivates us to propose Algorithm \ref{allocation_combine} which allocates tasks according to the \emph{COMBINE} operation and can be optimal in each round.
 
 \subsection{CATS: Maximizing data sharing of tasks according to the \emph{COMBINE} operation}
 
 \begin{algorithm}[t]
-	\SetAlgoNoLine
-	\KwIn{A task set $T$ and $T \mathrm{\neq} \emptyset$. A sensor node set $S$ and $S \mathrm{\neq} \emptyset$. $r\mathrm{\le} k$, $|S|\mathbf{=}m$.}
-	\KwOut{A task set where there are no overlapping tasks.}
-    \caption{CATS}
+    \caption{CATS$(T,S,k,r)$}
     \label{allocation_combine}
-    %\begin{algorithmic}[1]
-        maintain a task set $T_i$ for the sensor node $s_i$\;
-        $Q_i=$ Pre\_processing ($T_i$), and sort $Q_i$ in the descending order of the overlap value\;
-        \Repeat {there exists overlapping tasks in $T_1,...,T_m$}{
-            identify a task pair $\mathrm{<}t_1,t_2\mathrm{>}$ from $T_i$ which has the maximal overlap value\;
-            combine $t_1$ and $t_2$ and notate the resultant task as $t$\;
-            %\State remove $t_1$ and $t_2$, if they are in $T$;
-            remove $t_1$ and $t_2$ from $T_i$\;
-            add $t$ into $T_i$, and update $Q_i$\;
-        }
-        \Repeat {$T_i$ $(1\mathrm{\le} i\mathrm{\le} k)$ is not an empty set}{
-            randomly allocate a task $t$ $(t\in T_i)$ to a sensor node which is not allocated $t$ before\;
-            remove $t$ form $T_i$ if the task is allocated to $r$ out of $k$ sensor nodes\;
-        }
-        \textbf{COMBINE} for each task subset $T_i$\;
-    %\end{algorithmic}
+    \begin{algorithmic}[1]
+        \Require A task set $T$ and $T \mathrm{\neq} \emptyset$. A sensor node set $S$ and $S \mathrm{\neq} \emptyset$. $r\mathrm{\le} k$.
+        \While {there exists overlapping tasks in $T$}
+            \State identify a task pair $\mathrm{<}t_1,t_2\mathrm{>}$ from $T$ which has the maximal value of data sharing.
+            \State combine $t_1$ and $t_2$ and notate the resultant task by $t_{12}$.
+            \State remove $t_1$ and $t_2$ from $T$.
+            \State add $t_{12}$ into $T$.
+        \EndWhile
+        \While {$T$ is not an empty set}
+            \State randomly identify a task $t,t\mathrm{\in} T$.
+            \If {$t$ is not an original task}
+            \State identify the original tasks which generate $t$ after process of \emph{COMBINE}, and allocate them to $r$ sensor nodes.
+            \Else
+            \State allocate $t$ to $r$ sensor nodes.
+            \EndIf
+        \EndWhile
+    \end{algorithmic}
 \end{algorithm}
+
+
+%\begin{algorithm}[t]
+%	%\SetAlgoNoLine
+%	\KwIn{A task set $T$ and $T \mathrm{\neq} \emptyset$. A sensor node set $S$ and $S \mathrm{\neq} \emptyset$. $r\mathrm{\le} k$, $|S|\mathbf{=}m$.}
+%	\KwOut{A task set where there are no overlapping tasks.}
+%    \caption{CATS}
+%    \label{allocation_combine}
+%    %\begin{algorithmic}[1]
+%        maintain a task set $T_i$ for the sensor node $s_i$\;
+%        $Q_i=$ Pre\_processing ($T_i$), and sort $Q_i$ in the descending order of the overlap value\;
+%        \For {there exists overlapping tasks in $T_1,...,T_m$}{
+%            identify a task pair $\mathrm{<}t_1,t_2\mathrm{>}$ from $T_i$ which has the maximal overlap value\;
+%            combine $t_1$ and $t_2$ and notate the resultant task as $t$\;
+%            %\State remove $t_1$ and $t_2$, if they are in $T$;
+%            remove $t_1$ and $t_2$ from $T_i$\;
+%            add $t$ into $T_i$, and update $Q_i$\;
+%        }
+%        \For {$T_i$ $(1\mathrm{\le} i\mathrm{\le} k)$ is not an empty set}{
+%            randomly allocate a task $t$ $(t\in T_i)$ to a sensor node which is not allocated $t$ before\;
+%            remove $t$ form $T_i$ if the task is allocated to $r$ out of $k$ sensor nodes\;
+%        }
+%        \textbf{COMBINE} for each task subset $T_i$\;
+%    %\end{algorithmic}
+%\end{algorithm}
 
 The \emph{COMBINE} operation schedules sampling tasks for maximizing data sharing in each round. Since it has a good performance, we provide a solution which allocates tasks and computes the volume of sampled data by using the \emph{COMBINE} operation. As illustrated in Fig. \ref{figure_overview}, a task $t_0$ is detected by three sensor nodes, but only two of them are identified to perform it. If the task $t_0$ is overlapping with three tasks $t_1$, $t_2$ and $t_3$ such that $d(t_0,t_1)\mathrm{>}d(t_0,t_2)\mathrm{>}d(t_0,t_3)$. If $t_1$, $t_2$ and $t_3$ have already been allocated to $s_1$, $s_2$ and $s_3$, respectively. When $k\mathrm{=}3$ and $r\mathrm{=}2$, we should allocate $t_0$ to the sensor nodes $s_1$ and $s_2$.  The method includes three major steps. First, maintain a global quad list in which each quad stands for a \emph{COMBINE} operation of two overlapping tasks. Second, iteratively identify a quad which has the maximal value of data sharing of overlapping tasks in the global quad list. Then allocate the overlapping tasks to $r$  out of $k$ candidate sensor nodes. Finally, update the quad list and the task set. Algorithm \ref{allocation_combine} presents the method in detail. In Algorithm \ref{allocation_combine}, Lines $1\mathrm{-}5$ present the combination of the overlapping tasks. Lines $6\mathrm{-}11$ ensure that all tasks are allocated to $r$ different sensor nodes even though some tasks are not overlapping with others. The time complexity is $O(n^2)$, and the space complexity is $O(n)$.
 
@@ -661,7 +749,7 @@ Then perform Algorithm \ref{algorithm_combine} on the task set until there is no
 \label{figure_proof_allocation}
 \end{figure}
 
-To be clear, we take an example to illustrate the process of transformation. As shown in Fig. \ref{figure_proof_allocation}, assume there are five tasks $t_1,...,t_5$ (as indicated by cycle) which should be allocated to five nodes $s_1,...,s_5$.  \{$t_1,t_2,t_3$\} are detected by $s_1$. Similarly,  \{$t_2,t_3,t_4$\}, \{$t_3,t_4,t_5$\}, \{$t_4,t_5,t_1$\} and \{$t_5,t_1,t_2$\} are detected by nodes $s_2$, $s_3$, $s_4$ and $s_5$, respectively. Here, $k\mathrm{=}3$ and $r\mathrm{=}2$. As illustrated in Fig. \ref{figure_proof_allocation}(a), we construct a weighted graph where a vertex stands for a task. If two tasks are overlapping, then a weighted edge exists. The weighted value represents the value of data sharing. The value in the rectangle indicates the number of nodes which the task has been allocated to. The overlapping tasks which have the maximal data sharing are allocated to a node. Then, the data sharing between them is set to negative infinity (indicated by the dotted line). If a task has been allocated to $r$ sensor nodes, then the task is removed from the task set. Without loss of generality, the novel tasks generated from \emph{COMBINE} operation are not demonstrated. For example, in Fig. \ref{figure_proof_allocation}(b), we find that tasks $t_2$ and $t_4$ have the maximal value of data sharing: $0.5$. Then, allocate them to the node $s_2$, and set the data sharing between them to be negative infinity. As illustrated in Fig. \ref{figure_proof_allocation}(d), when the task $t_4$ has been allocated to $s_2$ and $s_3$, the edges between it and other nodes are removed. When the \emph{sampling interval} of tasks are scheduled to achieve the maximal data sharing, these tasks are eventually allocated to and sampled by the nodes. Since the process of task combination will generate novel tasks, novel vertices will added to the graph, but this will not impact the performance of Algorithm \ref{allocation_combine}.
+To be clear, we take an example to illustrate the process of transformation. As shown in Fig. \ref{figure_proof_allocation}, assume there are five tasks $t_1,...,t_5$ (as indicated by cycle) which should be allocated to five nodes $s_1,...,s_5$.  \{$t_1,t_2,t_3$\} are detected by $s_1$. Similarly,  \{$t_2,t_3,t_4$\}, \{$t_3,t_4,t_5$\}, \{$t_4,t_5,t_1$\} and \{$t_5,t_1,t_2$\} are detected by nodes $s_2$, $s_3$, $s_4$ and $s_5$, respectively. Here, $k\mathrm{=}3$ and $r\mathrm{=}2$. As illustrated in Fig. \ref{figure_proof_allocation}(a), we construct a weighted graph where a vertex stands for a task. If two tasks are overlapping, then a weighted edge exists. The weighted value represents the value of data sharing. The value in the rectangle indicates the number of nodes which the task has been allocated to. The overlapping tasks which have the maximal data sharing are allocated to a node. Then, the data sharing between them is set to negative infinity (indicated by the dotted line). If a task has been allocated to $r$ sensor nodes, then the task is removed from the task set. Without loss of generality, the novel tasks generated from \emph{COMBINE} operation are not demonstrated. For example, in Fig. \ref{figure_proof_allocation}(b), we find that tasks $t_2$ and $t_4$ have the maximal value of data sharing: $0.5$. Then, allocate them to the node $s_2$, and set the data sharing between them to be negative infinity. As illustrated in Fig. \ref{figure_proof_allocation}(d), when the task $t_4$ has been allocated to $s_2$ and $s_3$, the edges between it and other nodes are removed. When the sampling intervals of tasks are scheduled to achieve the maximal data sharing, these tasks are eventually allocated to and sampled by the nodes. Since the process of task combination will generate novel tasks, novel vertices will added to the graph, but this will not impact the performance of Algorithm \ref{allocation_combine}.
 
 
 \section{Performance evaluation}
@@ -715,29 +803,30 @@ At first, we evaluate the performance of our Algorithm \ref{algorithm_combine}, 
 %A sampling task is randomly generated in the time slot $[0,\; 50]$.
 
 %Fig. 6(a)-(b)
-Fig. \ref{evaluation1_data_sampled_tasks} and Fig.  \ref{evaluation1_data_sampled_interval} illustrate the number of transmitted packets when using \emph{COMBINE}, \emph{GA} and \emph{DP}, by varying the cardinality of a sampling task set (Fig. \ref{evaluation1_data_sampled_tasks}) or  the interval length of a sampling task (Fig. \ref{evaluation1_data_sampled_interval}). Specifically, the interval length of a sampling task is set to $5$ in Fig. \ref{evaluation1_data_sampled_tasks} while the cardinality of each task set is fixed to $30$ in Fig. \ref{evaluation1_data_sampled_interval}. It is easy to observe from Fig. \ref{evaluation1_data_sampled_tasks}  and Fig \ref{evaluation1_data_sampled_interval} that the number of transmitted packets increases with both the  growth of the number of tasks and the interval length. However, \emph{COMBINE} performs better and returns smaller number of transmitted packets  than \emph{GA}. This happens because our algorithm combines overlapping tasks which have the maximal value of data sharing for each step. Thus, each step is the current optimal choice. Consider that \emph{GA} schedules the \emph{sampling interval} of tasks based on the end time of a task, it cannot make sure each scheduling choice is optimal. That is the reason why \emph{COMBINE} outperforms \emph{GA}. Meanwhile, Fig. \ref{evaluation1_data_sampled_tasks} and Fig. \ref{evaluation1_data_sampled_interval} indicate \emph{COMBINE} achieves 2-factor approximation result vs. the optimal result. This verifies the correctness of  the Theorem \ref{theorem_schedule}.
+Fig. \ref{evaluation1_data_sampled_tasks} and Fig.  \ref{evaluation1_data_sampled_interval} illustrate the number of transmitted packets when using \emph{COMBINE}, \emph{GA} and \emph{DP}, by varying the cardinality of a sampling task set (Fig. \ref{evaluation1_data_sampled_tasks}) or  the interval length of a sampling task (Fig. \ref{evaluation1_data_sampled_interval}). Specifically, the interval length of a sampling task is set to $5$ in Fig. \ref{evaluation1_data_sampled_tasks} while the cardinality of each task set is fixed to $30$ in Fig. \ref{evaluation1_data_sampled_interval}. It is easy to observe from Fig. \ref{evaluation1_data_sampled_tasks}  and Fig \ref{evaluation1_data_sampled_interval} that the number of transmitted packets increases with both the  growth of the number of tasks and the interval length. However, \emph{COMBINE} performs better and returns smaller number of transmitted packets  than \emph{GA}. This happens because our algorithm combines overlapping tasks which have the maximal value of data sharing for each step. Thus, each step is the current optimal choice. Consider that \emph{GA} schedules the sampling intervals of tasks based on the end time of a task, it cannot make sure each scheduling choice is optimal. That is the reason why \emph{COMBINE} outperforms \emph{GA}. Meanwhile, Fig. \ref{evaluation1_data_sampled_tasks} and Fig. \ref{evaluation1_data_sampled_interval} indicate \emph{COMBINE} achieves 2-factor approximation result vs. the optimal result. This verifies the correctness of  the Theorem \ref{theorem_schedule}.
 
-In Fig. \ref{evaluation1_voltage}, we run  both \emph{COMBINE} and \emph{GA} methods on two sensor nodes to test their energy usage. The terminal voltage of batteries equipped for a sensor node is measured every $100$  time slots. The initial value is $2.864$V. It is apparent that while the terminal battery voltage decreases due to the energy consumption, \emph{COMBINE}  consumes less energy  than that \emph{GA} does. This is because that \emph{COMBINE} reduces more unnecessary sampled data than \emph{GA}. Since a sensor node uses up much more energy when listening, receiving and sending data, \emph{COMBINE} greatly cuts down  energy consumption and prolongs the lifetime of the entire wireless sensor network. Precisely, \emph{COMBINE} decreases energy consumption by $4.85\%$ per slot on average. In Fig. \ref{evaluation1_data_loss}, we test the data loss rate of different methods during data transmission by  changing the number of tasks on a single sensor node. We observe  that the data loss rate increases with the growth of the number of tasks. We are delighted to see that \emph{COMBINE} achieves the smaller data loss rate than \emph{GA}. Precisely, \emph{COMBINE} decreases energy consumption by 4\% per slot on average. Here, a time slot is a period of 50 seconds. Since a wireless sensor node works over decades of days, such improvements is appreciable and worthy to being exploited. Moreover, \emph{GA} is specifically designed for the scheduling of \emph{sampling interval}. It is unknown how to use \emph{GA} for task allocation. Adopting a random strategy of task allocation for 300 tasks in a  $k$-coverage and $r$-redundant network with $k\mathrm{=}5$ and $r\mathrm{=}2$, \emph{GA} consumes more energy and leads to more data loss rate than our solution by over $35\%$ and $30\%$ due to poorly exploiting data sharing among tasks. Such benefit becomes more obvious when the number of tasks increases. The reduction of redundant sampled data relieves the workload of intra-network  communication and decreases transmission delay and congestion by using \emph{COMBINE}.
+In Fig. \ref{evaluation1_voltage}, we run  both \emph{COMBINE} and \emph{GA} methods on two sensor nodes to test their energy usage. The terminal voltage of batteries equipped for a sensor node is measured every $100$  time slots. The initial value is $2.864$V. It is apparent that while the terminal battery voltage decreases due to the energy consumption, \emph{COMBINE}  consumes less energy  than that \emph{GA} does. This is because that \emph{COMBINE} reduces more unnecessary sampled data than \emph{GA}. Since a sensor node uses up much more energy when listening, receiving and sending data, \emph{COMBINE} greatly cuts down  energy consumption and prolongs the lifetime of the entire wireless sensor network. Precisely, \emph{COMBINE} decreases energy consumption by $4.85\%$ per slot on average. In Fig. \ref{evaluation1_data_loss}, we test the data loss rate of different methods during data transmission by  changing the number of tasks on a single sensor node. We observe  that the data loss rate increases with the growth of the number of tasks. We are delighted to see that \emph{COMBINE} achieves the smaller data loss rate than \emph{GA}. Precisely, \emph{COMBINE} decreases energy consumption by 4\% per slot on average. Here, a time slot is a period of 50 seconds. Since a wireless sensor node works over decades of days, such improvements is appreciable and worthy to being exploited. Moreover, \emph{GA} is specifically designed for the scheduling of sampling intervals. It is unknown how to use \emph{GA} for task allocation. Adopting a random strategy of task allocation for 300 tasks in a  $k$-coverage and $r$-redundant network with $k\mathrm{=}5$ and $r\mathrm{=}2$, \emph{GA} consumes more energy and leads to more data loss rate than our solution by over $35\%$ and $30\%$ due to poorly exploiting data sharing among tasks. Such benefit becomes more obvious when the number of tasks increases. The reduction of redundant sampled data relieves the workload of intra-network  communication and decreases transmission delay and congestion by using \emph{COMBINE}.
 
 \subsection{Performance of data sharing across WSNs}
 \label{section_performance_wsn}
 In this part, we verify the performance of the naive method which allocates tasks randomly,  \ref{allocation_prune}
 andp \ref{allocation_combine} which are represented by \emph{RANDOM}, \emph{PRUNE} and \emph{CATS}, respectively  hereinafter.
-%window size is 15, interval length varies from 1 to 15
 
 \begin{figure*}[!t]
 \centering
-\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, the testbed]{\includegraphics[width=0.27\columnwidth]{Figures/evaluation2_data_loss_rate}\label{evaluation2_data_loss_rate}}
-\hspace{1pt}\subfigure[The general network]{\includegraphics[width=0.33\columnwidth]{Figures/evaluation4_scene}\label{evaluation4_scene}}
-\hspace{1pt}\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, the general network]{\includegraphics[width=0.3\columnwidth]{Figures/evaluation4_data_loss_rate}\label{evaluation4_data_loss_rate}}
-\caption{A comparison of data loss rate in the testbed is presented by varying the number of nodes in (a). Besides, A general wireless sensor network is deployed by using $22$ nodes with $k=5$ and $r=2$. The yellow star means the collection node; while the red stars represent other nodes in the network, and some of their enlarged pictures are shown as examples. The data loss rate is compared by adopting different strategies of data sampling in (c).}
-\label{evaluation3}
+\subfigure[The network built in a general topology]{\includegraphics[width=0.33\columnwidth]{Figures/evaluation4_scene}\label{evaluation4_scene}}
+\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, general topology]{\includegraphics[width=0.28\columnwidth]{Figures/evaluation4_data_sampled_tasks}\label{evaluation4_data_sampled_tasks}}
+\subfigure[$k\mathrm{=}5$, $n\mathrm{=}30$, general topology]{\includegraphics[width=0.28\columnwidth]{Figures/evaluation4_data_sampled_r}\label{evaluation4_data_sampled_r}}
+\caption{The wireless sensor network with a general topology is deployed by using $22$ nodes. The yellow star means the collection node; while the red stars represent other nodes in the network, and some of their enlarged pictures are shown as examples. The comparison of sampled data is shown by adopting different strategies of data sampling when the number of tasks varies in (a) and $r$ varies in (b).}
+\label{evaluation4}
 \end{figure*}
  
  \begin{figure*}
 \centering
-\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, TOSSIM]{\includegraphics[width=0.26\columnwidth]{Figures/evaluation3_received_data}\label{evaluation3_received_data}}
-\hspace{20pt}\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, TOSSIM]{\includegraphics[width=0.26\columnwidth]{Figures/evaluation3_data_loss_rate}\label{evaluation3_loss_rate}}\caption{The number of received packets is compared by varying the number of nodes in (a) and so is the data loss rate in (b) for large scale wireless sensor networks simulated in TOSSIM.}
+\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, the testbed]{\includegraphics[width=0.285\columnwidth]{Figures/evaluation2_data_loss_rate}\label{evaluation2_data_loss_rate}}
+\hspace{10pt}
+\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, TOSSIM]{\includegraphics[width=0.28\columnwidth]{Figures/evaluation3_received_data}\label{evaluation3_received_data}}
+\hspace{10pt}\subfigure[$k\mathrm{=}5$, $r\mathrm{=}2$, TOSSIM]{\includegraphics[width=0.28\columnwidth]{Figures/evaluation3_data_loss_rate}\label{evaluation3_loss_rate}}\caption{A comparison of data loss rate in the testbed is presented by varying the number of nodes in (a). Besides, the number of received packets is compared by varying the number of nodes in (a) and so is the data loss rate in (b) for large scale wireless sensor networks simulated in TOSSIM.}
 \label{figure_evaluation4_scene}
 \end{figure*}
 
@@ -754,36 +843,22 @@ In Fig. \ref{evaluation2_data_sampled_tasks}, we vary the number of sampling tas
 
 It is difficult to derive an effective optimal solution for the joint optimization problem. However, when the scale of tasks is small, we can find the optimal result by using a brute-force method. To evaluate the performance of our method rigorously, we compare the number of transmitted packets on each method by varying the number of tasks and the value of $r$. In Fig. \ref{evaluation2_optimal1}, we display three groups of tasks and each of which has five tasks. The interval length of a task is set to $1/4$, $1/2$, and $3/4$ of its window size in the group $1$, $2$, and $3$, respectively. These tasks appear in time slot $[0,\; 20]$ randomly. Here, $k\mathrm{=}5$, $r\mathrm{=}2$. The optimal method is denoted by \emph{OPTIMAL}. It is clear that the number of transmitted packets increases with the  expansion of the interval length. \emph{PRUNE} and \emph{CATS} perform better than \emph{RANDOM} and are closely to the optimal allocation solution, i.e., \emph{OPTIMAL}. This confirms the conclusion of  Theorem \ref{theorem_allocation} again which clarifies that our greedy allocation algorithm is a 2-factor approximation  of the optimal solution. In Fig. \ref{evaluation2_optimal2}, we set $k\mathrm{=}8$, and modify the value of $r$ from $2$ to $6$. A quick conclusion drawn from the figure illustrates that the number of transmitted packets increases with the growth of $r$. Under such condition,  the \emph{CATS} achieves greatly smaller number of transmitted packets than twice of that produced by the optimal solution. It verifies the conclusion of Theorem \ref{theorem_allocation} again.
 
-Large amount of  sampled data definitely leads to server delay and congestion  in WSNs, degrading the quality of data transmission as a result. In Fig. \ref{evaluation2_data_loss_rate}, we compare data loss rate of different methods by changing the number of nodes in WSNs. It is obvious that the data loss rate becomes larger when the scale of network increases. But \emph{PRUNE} and \emph{CATS} significantly derive the smaller data loss rate than \emph{RANDOM} does. This verifies the benefits of our solution on the improvement of the quality of data transmission by cutting down the unnecessary sampled data. Additionally, we deploy a more general wireless sensor network which consists of $22$ nodes. As illustrated in Fig. \ref{evaluation4_scene}, the yellow star stands for the collection node, and the red stars are used to represent other nodes. Some enlarged pictures of those red stars are shown as examples. The wireless sensor network is a 5-coverage and 2-redundant network with $k=5$ and $r=2$. The sampling tasks are produced under the settings of Section \ref{section_environment_settings}. Moreover, the output power of each a sensor node is adjusted to be a high level in order to ensure that each an area of the network can be detected by at least 5 nodes. We conduct different experiments by varying the average number of tasks for a sensor node. For each an experiment, all the data can be collected for no more than 30 minutes. As illustrated in Fig. \ref{evaluation4_data_loss_rate}, we evaluate the loss rate of the sampled data when we adopts different strategies of data sampling. The average number of sampling tasks for a node varies from 1800 to 5400. It is obvious that \emph{CATS} and \emph{PRUNE} perform better than \emph{RANDOM} because the loss rate of sampled data caused by \emph{CATS} and \emph{PRUNE} is much less than that caused by \emph{RANDOM}. 
+Additionally, we deploy a real wireless sensor network which consists of $22$ nodes and is built in a general topology. As illustrated in Fig. \ref{evaluation4_scene}, the yellow star stands for the collection node, and the red stars are used to represent other nodes. Some enlarged pictures of those red stars are shown as examples. The sampling tasks are produced under the settings of Section \ref{section_environment_settings}. Moreover, the output power of each a sensor node is adjusted to be a high level in order to build a coverage network.  As illustrated in Fig. \ref{evaluation4_data_sampled_tasks} and Fig. \ref{evaluation4_data_sampled_r}, we compare the amount of sampled data to evaluate the performance of  different strategies of data sampling. It is obvious that \emph{CATS} and \emph{PRUNE} perform better than \emph{RANDOM}  when we varies the number of sampling tasks or the length of sampling interval for a task. The main reason is that they reduce unnecessary sampled data by adopting effective data sharing strategies. It is noting that the real wireless sensor network is built in a more general topology than the grid topology we use in the testbed. The result thus shows that our strategies of task allocation and scheduling of sampling intervals, i.e., \emph{CATS} and \emph{PRUNE}, are effective to reduce the unnecessary sampled data.
 
-%\begin{table}[b]
-%\centering
-%\tbl{The loss rate of sampled data when we vary the average number of sampling tasks for the network\label{table_evaluation4}}{
-%\begin{tabular}{|c|c|c|c|c|}
-%\hline
-%    Loss rate &  1800 & 2700 & 3600 & 5400\\ \hline
-%    RANDOM& 624(0.653) & 826(0.694) & 908(0.748) & 1210(0.776)\\ \hline
-%    PRUNE& 1190(0.339) & 1474(0.454) & 1832(0.491) & 2081(0.615)\\ \hline
-%    CATS& 1354(0.248) & 1992(0.262) & 2521(0.3) & 3623(0.329)\\ \hline
-%\end{tabular}}
-%\end{table}
-
-
-
-We conduct simulations for evaluating the scalability of our proposed algorithms for a large scale wireless sensor network. These simulations are implemented with TOSSIM which is a widely-used simulation tool for wireless sensor networks \cite{2003_TOSSIM}. We construct a grid network and the settings of the simulate network are listed in Fig. \ref{figure_appendix} which are widely accepted \cite{1999_wideband_channel_measurement}. As illustrated in Fig. \ref{evaluation3_received_data}, we compare the number of received data by varying the scale of the network.   We apparently observe that \emph{CATS} brings the smallest amount of received data when the scale of the network grows. The reason is that \emph{CATS} reduces more unnecessary sampled data than \emph{PRUNE} and \emph{RANDOM}. Noting that \emph{PRUNE} brings more received data than \emph{RANDOM} when the number of sensor nodes in the network is $121$ and $144$. The reason is that \emph{RANDOM} causes more severe loss of data than \emph{PRUNE} when the scale of the network is large. Although \emph{RANDOM} produces the largest volume of sampled data, the received data by using \emph{RANDOM} may be smaller than \emph{PRUNE} because of data loss. As illustrated in Fig. \ref{evaluation3_loss_rate}, the data loss rate in both \emph{CATS} and \emph{PRUNE} is much smaller than that in \emph{RANDOM}. It happens when the number of transmitted data in \emph{CATS} and \emph{PRUNE} is smaller than that in \emph{RANDOM}. In summary, \emph{CATS} is more suitable to be deployed for a large-scale wireless sensor network as it always performs much better than \emph{RANDOM}.
+Besides, large amount of  sampled data definitely leads to server delay and congestion  in WSNs, degrading the quality of data transmission as a result. In Fig. \ref{evaluation2_data_loss_rate}, we compare data loss rate of different methods by changing the number of nodes in WSNs. It is obvious that the data loss rate becomes larger when the scale of network increases. But \emph{PRUNE} and \emph{CATS} significantly derive the smaller data loss rate than \emph{RANDOM} does. This verifies the benefits of our solution on the improvement of the quality of data transmission by cutting down the unnecessary sampled data. In addition, we conduct simulations for evaluating the scalability of our proposed algorithms for a large scale wireless sensor network. These simulations are implemented with TOSSIM which is a widely-used simulation tool for wireless sensor networks \cite{2003_TOSSIM}. We construct a grid network and the settings of the simulate network are listed in Fig. \ref{figure_appendix} which are widely accepted \cite{1999_wideband_channel_measurement}. As illustrated in Fig. \ref{evaluation3_received_data}, we compare the number of received data by varying the scale of the network.   We apparently observe that \emph{CATS} brings the smallest amount of received data when the scale of the network grows. The reason is that \emph{CATS} reduces more unnecessary sampled data than \emph{PRUNE} and \emph{RANDOM}. Noting that \emph{PRUNE} brings more received data than \emph{RANDOM} when the number of sensor nodes in the network is $121$ and $144$. The reason is that \emph{RANDOM} causes more severe loss of data than \emph{PRUNE} when the scale of the network is large. Although \emph{RANDOM} produces the largest volume of sampled data, the received data by using \emph{RANDOM} may be smaller than \emph{PRUNE} because of data loss. As illustrated in Fig. \ref{evaluation3_loss_rate}, the data loss rate in both \emph{CATS} and \emph{PRUNE} is much smaller than that in \emph{RANDOM}. It happens when the number of transmitted data in \emph{CATS} and \emph{PRUNE} is smaller than that in \emph{RANDOM}. In summary, \emph{CATS} is more suitable to be deployed for a large-scale wireless sensor network as it always performs much better than \emph{RANDOM}.
 
 \section{Discussion}
 \label{discussion}
-We have proposed methods of task allocation and scheduling of \emph{sampling interval} and given much theoretical analysis about their performance. As the question is general, we aim to provide a universal solution which does not rely on the details of network. The sink node runs CATS and gets the strategy of task allocation in a wireless sensor network. It then allocates the sampling tasks to the sensor nodes. The allocation message will be added into packets and disseminated to sensor nodes with sampling tasks together. Comparing to the volume of sampled data of sampling tasks, such expenditure on the allocation solution is rather few. Meanwhile, as illustrated in Section \ref{section_performance_wsn}, adopting the strategy of task allocation can reduce redundancy of sampling data by more than 30\%. Therefore, it is worthy to trading few expenditure for appreciable data sharing \cite{Liu2012ISAR} \cite{Liu2013FADE}. Besides, some other details  such as protocols of communication and data routing do not impact performance of the proposed algorithms. We do not adopt optimization on such communication protocols or routing strategy. We aim to propose an effective solution for the joint optimization problem.
+We have proposed methods of task allocation and scheduling of sampling intervals and given much theoretical analysis about their performance. As the question is general, we aim to provide a universal solution which does not rely on the details of network. The sink node runs CATS and gets the strategy of task allocation in a wireless sensor network. It then allocates the sampling tasks to the sensor nodes. The allocation message will be added into packets and disseminated to sensor nodes with sampling tasks together. Comparing to the volume of sampled data of sampling tasks, such expenditure on the allocation solution is rather few. Meanwhile, as illustrated in Section \ref{section_performance_wsn}, adopting the strategy of task allocation can reduce redundancy of sampling data by more than 30\%. Therefore, it is worthy to trading few expenditure for appreciable data sharing \cite{Liu2012ISAR} \cite{Liu2013FADE}. Besides, some other details  such as protocols of communication and data routing do not impact performance of the proposed algorithms. We do not adopt optimization on such communication protocols or routing strategy. We aim to propose an effective solution for the joint optimization problem.
 
 
 The allocation of tasks involves assigning each task to $r$ out of $k$ candidate sensor nodes. The current allocation scheme seeks to fully exploit the benefits of data sharing amongst tasks. In reality, there still exists other important constraints that can be exploited to improve the proposed allocation schemes. Note that each sensor node is resource-constrained, i.e., it has limited computation and memory resources. If a sensor node has been allocated many sampling tasks, it may not handle all the tasks timely and exhaust the energy at early time. This problem cannot thus be simply addressed by limiting the number of tasks a sensor node carrying. The reason is that although different nodes have the same amount of sampling tasks, the real work load of  sensor nodes may have a considerable difference due to the data sharing strategy. Therefore, contemporary task allocation schemes can be more practical if we consider the load balance amongst sensor nodes. An effective method is to set a threshold for the constrained resource. Each allocation step makes sure that the threshold value is not exceeded. Algorithm \ref{allocation_prune} and Algorithm \ref{allocation_combine} are flexible to adjust for this tactics. When the  limited resource changes dynamically, the allocation problem will be more difficult to solve. We leave it as our future work.
 
-In this paper, we aim to minimize the sampled data for a sampling task set by cooperatively allocating tasks and scheduling \emph{sampling interval} of tasks which are allocated to a sensor node. Our proposed algorithms do not relay on the topology of a network. In fact, the information of a network can be utilized to improve the performance of our algorithms on many respects. For example, even though many applications require to get the entire data of \emph{sampling interval}, we can divide the \emph{sampling interval} into several segments for a $k$-coverage network if these segments can be integrated into the complete task finally on the sink node. These sampling segments can be allocated to the sensor nodes, which will help to balance the sampling workload on sensor nodes in our proposals. However, embedding the network information into our solutions introduces arduous problems, including task dividing, data fusion and so forth. We leave it as our future work as well.
+In this paper, we aim to minimize the sampled data for a sampling task set by cooperatively allocating tasks and scheduling sampling intervals of tasks which are allocated to a sensor node. Our proposed algorithms do not relay on the topology of a network. In fact, the information of a network can be utilized to improve the performance of our algorithms on many respects. For example, even though many applications require to get the entire data of sampling intervals, we can divide the sampling intervals into several segments for a $k$-coverage network if these segments can be integrated into the complete task finally on the sink node. These sampling segments can be allocated to the sensor nodes, which will help to balance the sampling workload on sensor nodes in our proposals. However, embedding the network information into our solutions introduces arduous problems, including task dividing, data fusion and so forth. We leave it as our future work as well.
 
 \section{Conclusion}
 \label{conclusion}
-Many applications of wireless sensor networks  pursue to perform a set of interval sampling tasks for decision-making.  In this paper, we focus on minimizing the volume of sampled data in a $k$-coverage and $r$-redundant wireless sensor network. The solving of this optimization problem depends on the optimization of  two sub-problems: the problem of task allocation amongst candidate sensor nodes  and the problem of scheduling \emph{sampling interval} of sampling tasks which are allocated to a sensor node. Since the strategy of task allocation dominates the performance of the scheduling of \emph{sampling interval} of sampling tasks.  We jointly optimize both sub-problems. To be specific, we first propose a crucial operation for the problem, namely, \emph{COMBINE}, and give a rigorous bound of its performance. Furthermore, we present our method which allocates tasks and computes the amount of sampled data by using \emph{CATS}.  The effectiveness and scalability of our proposals is evaluated by employing a testbed and TOSSIM, respectively. The extensive empirical study indicates that our method  reduces the amount of sampled data significantly, saves  rare energy considerably, and improves the quality of communication apparently  due to the decrease of data loss rate.
+Many applications of wireless sensor networks  pursue to perform a set of interval sampling tasks for decision-making.  In this paper, we focus on minimizing the volume of sampled data in a $k$-coverage and $r$-redundant wireless sensor network. The solving of this optimization problem depends on the optimization of  two sub-problems: the problem of task allocation amongst candidate sensor nodes  and the problem of scheduling sampling intervals of sampling tasks which are allocated to a sensor node. Since the strategy of task allocation dominates the performance of the scheduling of sampling intervals of sampling tasks.  We jointly optimize both sub-problems. To be specific, we first propose a crucial operation for the problem, namely, \emph{COMBINE}, and give a rigorous bound of its performance. Furthermore, we present our method which allocates tasks and computes the amount of sampled data by using \emph{CATS}.  The effectiveness and scalability of our proposals is evaluated by employing a testbed and TOSSIM, respectively. The extensive empirical study indicates that our method  reduces the amount of sampled data significantly, saves  rare energy considerably, and improves the quality of communication apparently  due to the decrease of data loss rate.
 
 
 %\bibliographystyle{IEEEtran}
