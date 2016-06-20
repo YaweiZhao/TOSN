@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.10)  4 APR 2016 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.10)  20 JUN 2016 09:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -380,19 +380,19 @@ LaTeX Warning: Label `figure_combination' multiply defined.
 \openout1 = `Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Inte
 rval_Data_Sampling_in_WSNs.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -453,85 +453,112 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 45
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 56
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 45
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 56
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 45
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 56
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 45
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 56
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 45.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 56.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 45.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 
 Excluding 'CCSXML' comment.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 81.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 98.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 83.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 100.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 102.
+
+Overfull \hbox (616.40207pt too wide) has occurred while \output is active
+[]\OT1/phv/b/n/12 CATS: Cooperative Allocation of Tasks and Scheduling of Sampl
+ing Intervals for Maximizing Data Sharing in WSNs[] 
+ []
+
 
 Overfull \vbox (72.27pt too high) has occurred while \output is active []
 
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
 ]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7.4> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 91.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 108.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
- [2]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:2 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[2]
 <Figures/figure_introduction_scheduling.pdf, id=18, 247.14232pt x 177.09863pt>
 File: Figures/figure_introduction_scheduling.pdf Graphic file (type pdf)
 
 <use Figures/figure_introduction_scheduling.pdf>
 Package pdftex.def Info: Figures/figure_introduction_scheduling.pdf used on inp
-ut line 109.
+ut line 126.
 (pdftex.def)             Requested size: 178.19879pt x 127.69466pt.
 
 <Figures/figure_introduction_allocation.pdf, id=19, 288.4065pt x 204.91154pt>
@@ -539,24 +566,68 @@ File: Figures/figure_introduction_allocation.pdf Graphic file (type pdf)
 
 <use Figures/figure_introduction_allocation.pdf>
 Package pdftex.def Info: Figures/figure_introduction_allocation.pdf used on inp
-ut line 110.
+ut line 127.
 (pdftex.def)             Requested size: 198.0pt x 140.68246pt.
 
-Underfull \vbox (badness 2253) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./Figures/figure_introduction_scheduling.pdf> <./Figures/figure_introducti
-on_allocation.pdf
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:3
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[3 <./Figures/figure_introduction_scheduling.pdf> <./Figures/figure_introductio
+n_allocation.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_introductio
 n_allocation.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
->] [4] [5]
-<Figures/figure_overview_task_model.pdf, id=82, 250.31818pt x 174.10545pt>
+>]
+Underfull \vbox (badness 4886) has occurred while \output is active []
+
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:4 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:5
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[5] <Figures/figure_overview_task_model.pdf, id=82, 250.31818pt x 174.10545pt>
 File: Figures/figure_overview_task_model.pdf Graphic file (type pdf)
 
 <use Figures/figure_overview_task_model.pdf>
 Package pdftex.def Info: Figures/figure_overview_task_model.pdf used on input l
-ine 183.
+ine 200.
 (pdftex.def)             Requested size: 158.39758pt x 110.17317pt.
 
 <Figures/figure_overview_network_model.pdf, id=83, 289.73846pt x 279.88365pt>
@@ -564,38 +635,67 @@ File: Figures/figure_overview_network_model.pdf Graphic file (type pdf)
 
 <use Figures/figure_overview_network_model.pdf>
 Package pdftex.def Info: Figures/figure_overview_network_model.pdf used on inpu
-t line 185.
+t line 202.
 (pdftex.def)             Requested size: 166.31927pt x 160.6628pt.
- [6 <./Figures/figure_overview_task_model.pdf> <./Figures/figure_overview_netwo
-rk_model.pdf
+
+Underfull \vbox (badness 1701) has occurred while \output is active []
+
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:6 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[6 <./Figures/figure_overview_task_model.pdf> <./Figures/figure_overview_networ
+k_model.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_overview_ne
 twork_model.pdf): PDF inclusion: multiple pdfs with page group included in a si
 ngle page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
+ []
+
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:7
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
  []
 
 [7] <Figures/figure2_a.pdf, id=165, 208.48792pt x 157.6801pt>
 File: Figures/figure2_a.pdf Graphic file (type pdf)
 
 <use Figures/figure2_a.pdf>
-Package pdftex.def Info: Figures/figure2_a.pdf used on input line 313.
+Package pdftex.def Info: Figures/figure2_a.pdf used on input line 330.
 (pdftex.def)             Requested size: 122.75903pt x 92.84277pt.
 
 <Figures/figure2_b.pdf, id=166, 204.54617pt x 155.92755pt>
 File: Figures/figure2_b.pdf Graphic file (type pdf)
 
 <use Figures/figure2_b.pdf>
-Package pdftex.def Info: Figures/figure2_b.pdf used on input line 315.
+Package pdftex.def Info: Figures/figure2_b.pdf used on input line 332.
 (pdftex.def)             Requested size: 126.7229pt x 96.60507pt.
 
 <Figures/figure2_c.pdf, id=167, 210.23944pt x 158.99399pt>
 File: Figures/figure2_c.pdf Graphic file (type pdf)
 
 <use Figures/figure2_c.pdf>
-Package pdftex.def Info: Figures/figure2_c.pdf used on input line 317.
+Package pdftex.def Info: Figures/figure2_c.pdf used on input line 334.
 (pdftex.def)             Requested size: 126.7229pt x 95.83623pt.
 
 <Figures/figure_proof_scheduling_1.pdf, id=168, 386.01215pt x 97.25835pt>
@@ -603,7 +703,7 @@ File: Figures/figure_proof_scheduling_1.pdf Graphic file (type pdf)
 
 <use Figures/figure_proof_scheduling_1.pdf>
 Package pdftex.def Info: Figures/figure_proof_scheduling_1.pdf used on input li
-ne 328.
+ne 345.
 (pdftex.def)             Requested size: 257.39758pt x 64.85405pt.
 
 <Figures/figure_proof_scheduling_2.pdf, id=169, 320.09186pt x 193.42061pt>
@@ -611,9 +711,35 @@ File: Figures/figure_proof_scheduling_2.pdf Graphic file (type pdf)
 
 <use Figures/figure_proof_scheduling_2.pdf>
 Package pdftex.def Info: Figures/figure_proof_scheduling_2.pdf used on input li
-ne 330.
+ne 347.
 (pdftex.def)             Requested size: 237.60242pt x 143.58055pt.
- [8] [9 <./Figures/figure2_a.pdf> <./Figures/figure2_b.pdf
+
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:8 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[8]
+Overfull \hbox (59.69191pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:9
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[9 <./Figures/figure2_a.pdf> <./Figures/figure2_b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure2_b.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
@@ -636,7 +762,7 @@ File: Figures/figure_combination_overlap.pdf Graphic file (type pdf)
 
 <use Figures/figure_combination_overlap.pdf>
 Package pdftex.def Info: Figures/figure_combination_overlap.pdf used on input l
-ine 464.
+ine 481.
 (pdftex.def)             Requested size: 150.48193pt x 93.29132pt.
 
 <Figures/figure_combination_combine.pdf, id=477, 283.29741pt x 129.29704pt>
@@ -644,16 +770,45 @@ File: Figures/figure_combination_combine.pdf Graphic file (type pdf)
 
 <use Figures/figure_combination_combine.pdf>
 Package pdftex.def Info: Figures/figure_combination_combine.pdf used on input l
-ine 466.
+ine 483.
 (pdftex.def)             Requested size: 190.07831pt x 86.75482pt.
- [10] [11 <./Figures/figure_combination_overlap.pdf> <./Figures/figure_combinat
-ion_combine.pdf
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:10 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:11
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[11 <./Figures/figure_combination_overlap.pdf> <./Figures/figure_combination_co
+mbine.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_combination
 _combine.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >]
-Underfull \hbox (badness 1371) in paragraph at lines 531--532
+Underfull \hbox (badness 1371) in paragraph at lines 548--549
 [] \OT1/ptm/m/n/10 Con-sider a non-empty task set $\OML/ztmcm/m/it/10 T$ \OT1/p
 tm/m/n/10 and the over-lap-ping tasks $\OML/ztmcm/m/it/10 t[]$ \OT1/ptm/m/n/10 
 and $\OML/ztmcm/m/it/10 t[]$\OT1/ptm/m/n/10 . $\OMS/ztmcm/m/n/10 8\OML/ztmcm/m/
@@ -664,52 +819,93 @@ it/10 t[][]T$\OT1/ptm/m/n/10 ,
 File: Figures/figure3_c.pdf Graphic file (type pdf)
 
 <use Figures/figure3_c.pdf>
-Package pdftex.def Info: Figures/figure3_c.pdf used on input line 559.
+Package pdftex.def Info: Figures/figure3_c.pdf used on input line 576.
 (pdftex.def)             Requested size: 158.39758pt x 93.30449pt.
 
 <Figures/figure3_d.pdf, id=571, 235.12242pt x 139.09265pt>
 File: Figures/figure3_d.pdf Graphic file (type pdf)
 
 <use Figures/figure3_d.pdf>
-Package pdftex.def Info: Figures/figure3_d.pdf used on input line 560.
+Package pdftex.def Info: Figures/figure3_d.pdf used on input line 577.
 (pdftex.def)             Requested size: 158.39758pt x 93.70732pt.
- [12]
-<Figures/figure_prune_allocation_1.pdf, id=575, 432.7426pt x 160.74554pt>
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:12 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[12]
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:13
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[13 <./Figures/figure3_c.pdf> <./Figures/figure3_d.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure3_d.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>] <Figures/figure_prune_allocation_1.pdf, id=650, 432.7426pt x 160.74554pt>
 File: Figures/figure_prune_allocation_1.pdf Graphic file (type pdf)
 
 <use Figures/figure_prune_allocation_1.pdf>
 Package pdftex.def Info: Figures/figure_prune_allocation_1.pdf used on input li
-ne 651.
+ne 668.
 (pdftex.def)             Requested size: 277.19879pt x 102.97244pt.
 
-<Figures/figure_prune_allocation_2.pdf, id=576, 416.97462pt x 162.05945pt>
+<Figures/figure_prune_allocation_2.pdf, id=651, 416.97462pt x 162.05945pt>
 File: Figures/figure_prune_allocation_2.pdf Graphic file (type pdf)
 
 <use Figures/figure_prune_allocation_2.pdf>
 Package pdftex.def Info: Figures/figure_prune_allocation_2.pdf used on input li
-ne 652.
+ne 669.
 (pdftex.def)             Requested size: 277.19879pt x 107.73602pt.
- [13 <./Figures/figure3_c.pdf> <./Figures/figure3_d.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure3_d.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
->] [14 <./Figures/figure_prune_allocation_1.pdf> <./Figures/figure_prune_alloca
-tion_2.pdf
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:14 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[14 <./Figures/figure_prune_allocation_1.pdf> <./Figures/figure_prune_allocatio
+n_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_prune_alloc
 ation_2.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 662.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 679.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 662.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 679.
 
 <Figures/figure_combination_allocation_1.pdf, id=806, 163.5936pt x 149.79663pt>
 File: Figures/figure_combination_allocation_1.pdf Graphic file (type pdf)
 <use Figures/figure_combination_allocation_1.pdf>
 Package pdftex.def Info: Figures/figure_combination_allocation_1.pdf used on in
-put line 716.
+put line 733.
 (pdftex.def)             Requested size: 126.7229pt x 116.0386pt.
 
 <Figures/figure_combination_allocation_2.pdf, id=807, 114.97554pt x 148.48273pt
@@ -717,10 +913,10 @@ put line 716.
 File: Figures/figure_combination_allocation_2.pdf Graphic file (type pdf)
  <use Figures/figure_combination_allocation_2.pdf>
 Package pdftex.def Info: Figures/figure_combination_allocation_2.pdf used on in
-put line 718.
+put line 735.
 (pdftex.def)             Requested size: 87.12048pt x 112.51497pt.
 
-Underfull \hbox (badness 2608) in paragraph at lines 724--725
+Underfull \hbox (badness 2608) in paragraph at lines 741--742
 []\OT1/ptm/m/n/10 For ex-am-ple, let $\OML/ztmcm/m/it/10 T[]\OMS/ztmcm/m/n/10 f
 \OML/ztmcm/m/it/10 t[]; t[]; t[]; t[]\OMS/ztmcm/m/n/10 g$ \OT1/ptm/m/n/10 de-no
 te a task set where $\OML/ztmcm/m/it/10 t[][]\OT1/ztmcm/m/n/10 0\OML/ztmcm/m/it
@@ -729,17 +925,43 @@ n/10 , $\OML/ztmcm/m/it/10 t[][]\OT1/ztmcm/m/n/10 2\OML/ztmcm/m/it/10 ; \OT1/zt
 mcm/m/n/10 6\OML/ztmcm/m/it/10 ; \OT1/ztmcm/m/n/10 2[]$\OT1/ptm/m/n/10 ,
  []
 
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:15
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
 [15] <Figures/figure_proof_allocation.pdf, id=812, 499.45998pt x 253.83734pt>
 File: Figures/figure_proof_allocation.pdf Graphic file (type pdf)
 
 <use Figures/figure_proof_allocation.pdf>
 Package pdftex.def Info: Figures/figure_proof_allocation.pdf used on input line
- 747.
+ 764.
 (pdftex.def)             Requested size: 396.0pt x 201.26132pt.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 752.
- [16 <./Figures/figure_combination_allocation_1.pdf> <./Figures/figure_combinat
-ion_allocation_2.pdf
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 769.
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:16 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[16 <./Figures/figure_combination_allocation_1.pdf> <./Figures/figure_combinati
+on_allocation_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/figure_combination
 _allocation_2.pdf): PDF inclusion: multiple pdfs with page group included in a 
@@ -748,7 +970,7 @@ single page
 File: Figures/testbed_image.pdf Graphic file (type pdf)
 
 <use Figures/testbed_image.pdf>
-Package pdftex.def Info: Figures/testbed_image.pdf used on input line 763.
+Package pdftex.def Info: Figures/testbed_image.pdf used on input line 780.
 (pdftex.def)             Requested size: 316.80121pt x 202.5033pt.
 
 
@@ -760,7 +982,7 @@ ampled_tasks.pdf): PDF inclusion: found PDF version <1.6>, but at most version
 File: Figures/evaluation1_data_sampled_tasks.pdf Graphic file (type pdf)
 <use Figures/evaluation1_data_sampled_tasks.pdf>
 Package pdftex.def Info: Figures/evaluation1_data_sampled_tasks.pdf used on inp
-ut line 770.
+ut line 787.
 (pdftex.def)             Requested size: 93.06024pt x 93.0594pt.
 
 
@@ -773,7 +995,7 @@ pt>
 File: Figures/evaluation1_data_sampled_interval.pdf Graphic file (type pdf)
  <use Figures/evaluation1_data_sampled_interval.pdf>
 Package pdftex.def Info: Figures/evaluation1_data_sampled_interval.pdf used on 
-input line 770.
+input line 787.
 (pdftex.def)             Requested size: 91.86987pt x 92.66742pt.
 
 
@@ -784,7 +1006,7 @@ ed
 File: Figures/evaluation1_voltage.pdf Graphic file (type pdf)
 
 <use Figures/evaluation1_voltage.pdf>
-Package pdftex.def Info: Figures/evaluation1_voltage.pdf used on input line 771
+Package pdftex.def Info: Figures/evaluation1_voltage.pdf used on input line 788
 .
 (pdftex.def)             Requested size: 102.95782pt x 92.98341pt.
 
@@ -797,7 +1019,7 @@ File: Figures/evaluation1_data_loss_rate.pdf Graphic file (type pdf)
 
 <use Figures/evaluation1_data_loss_rate.pdf>
 Package pdftex.def Info: Figures/evaluation1_data_loss_rate.pdf used on input l
-ine 773.
+ine 790.
 (pdftex.def)             Requested size: 99.1994pt x 91.56903pt.
 
 
@@ -810,7 +1032,7 @@ File: Figures/evaluation2_data_sampled_tasks.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_data_sampled_tasks.pdf>
 Package pdftex.def Info: Figures/evaluation2_data_sampled_tasks.pdf used on inp
-ut line 780.
+ut line 797.
 (pdftex.def)             Requested size: 99.0pt x 92.87299pt.
 
 
@@ -822,7 +1044,7 @@ File: Figures/evaluation2_data_sampled_r.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_data_sampled_r.pdf>
 Package pdftex.def Info: Figures/evaluation2_data_sampled_r.pdf used on input l
-ine 781.
+ine 798.
 (pdftex.def)             Requested size: 99.0pt x 91.89445pt.
 
 
@@ -833,8 +1055,8 @@ wed
 File: Figures/evaluation2_optimal1.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_optimal1.pdf>
-Package pdftex.def Info: Figures/evaluation2_optimal1.pdf used on input line 78
-2.
+Package pdftex.def Info: Figures/evaluation2_optimal1.pdf used on input line 79
+9.
 (pdftex.def)             Requested size: 93.25964pt x 92.93892pt.
 
 
@@ -845,25 +1067,57 @@ wed
 File: Figures/evaluation2_optimal2.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_optimal2.pdf>
-Package pdftex.def Info: Figures/evaluation2_optimal2.pdf used on input line 78
-3.
+Package pdftex.def Info: Figures/evaluation2_optimal2.pdf used on input line 80
+0.
 (pdftex.def)             Requested size: 93.6524pt x 93.48877pt.
 
-Underfull \vbox (badness 1038) has occurred while \output is active []
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:17
+ []
 
- [17 <./Figures/figure_proof_allocation.pdf>]
-Underfull \vbox (badness 3029) has occurred while \output is active []
 
- [18 <./Figures/testbed_image.pdf> <./Figures/evaluation1_data_sampled_tasks.pd
-f> <./Figures/evaluation1_data_sampled_interval.pdf> <./Figures/evaluation1_vol
-tage.pdf> <./Figures/evaluation1_data_loss_rate.pdf> <./Figures/evaluation2_dat
-a_sampled_tasks.pdf> <./Figures/evaluation2_data_sampled_r.pdf> <./Figures/eval
-uation2_optimal1.pdf> <./Figures/evaluation2_optimal2.pdf>] [19]
-<Figures/evaluation4_scene.pdf, id=1074, 875.74982pt x 655.48288pt>
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[17 <./Figures/figure_proof_allocation.pdf>]
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:18 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[18 <./Figures/testbed_image.pdf> <./Figures/evaluation1_data_sampled_tasks.pdf
+> <./Figures/evaluation1_data_sampled_interval.pdf> <./Figures/evaluation1_volt
+age.pdf> <./Figures/evaluation1_data_loss_rate.pdf> <./Figures/evaluation2_data
+_sampled_tasks.pdf> <./Figures/evaluation2_data_sampled_r.pdf> <./Figures/evalu
+ation2_optimal1.pdf> <./Figures/evaluation2_optimal2.pdf>]
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:19
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[19] <Figures/evaluation4_scene.pdf, id=1074, 875.74982pt x 655.48288pt>
 File: Figures/evaluation4_scene.pdf Graphic file (type pdf)
 
 <use Figures/evaluation4_scene.pdf>
-Package pdftex.def Info: Figures/evaluation4_scene.pdf used on input line 817.
+Package pdftex.def Info: Figures/evaluation4_scene.pdf used on input line 834.
 (pdftex.def)             Requested size: 130.68073pt x 97.80809pt.
 
 
@@ -876,7 +1130,7 @@ File: Figures/evaluation4_data_sampled_tasks.pdf Graphic file (type pdf)
 
 <use Figures/evaluation4_data_sampled_tasks.pdf>
 Package pdftex.def Info: Figures/evaluation4_data_sampled_tasks.pdf used on inp
-ut line 818.
+ut line 835.
 (pdftex.def)             Requested size: 110.87952pt x 102.32222pt.
 
 
@@ -888,7 +1142,7 @@ File: Figures/evaluation4_data_sampled_r.pdf Graphic file (type pdf)
 
 <use Figures/evaluation4_data_sampled_r.pdf>
 Package pdftex.def Info: Figures/evaluation4_data_sampled_r.pdf used on input l
-ine 819.
+ine 836.
 (pdftex.def)             Requested size: 110.87952pt x 103.18431pt.
 
 
@@ -900,7 +1154,7 @@ File: Figures/evaluation2_data_loss_rate.pdf Graphic file (type pdf)
 
 <use Figures/evaluation2_data_loss_rate.pdf>
 Package pdftex.def Info: Figures/evaluation2_data_loss_rate.pdf used on input l
-ine 826.
+ine 843.
 (pdftex.def)             Requested size: 112.86145pt x 104.30568pt.
 
 
@@ -912,7 +1166,7 @@ File: Figures/evaluation3_received_data.pdf Graphic file (type pdf)
 
 <use Figures/evaluation3_received_data.pdf>
 Package pdftex.def Info: Figures/evaluation3_received_data.pdf used on input li
-ne 828.
+ne 845.
 (pdftex.def)             Requested size: 110.87952pt x 102.13731pt.
 
 
@@ -924,21 +1178,86 @@ File: Figures/evaluation3_data_loss_rate.pdf Graphic file (type pdf)
 
 <use Figures/evaluation3_data_loss_rate.pdf>
 Package pdftex.def Info: Figures/evaluation3_data_loss_rate.pdf used on input l
-ine 829.
+ine 846.
 (pdftex.def)             Requested size: 110.87952pt x 103.82466pt.
 
 <Figures/figure_appendix.pdf, id=1080, 797.57875pt x 344.03831pt>
 File: Figures/figure_appendix.pdf Graphic file (type pdf)
 
 <use Figures/figure_appendix.pdf>
-Package pdftex.def Info: Figures/figure_appendix.pdf used on input line 835.
+Package pdftex.def Info: Figures/figure_appendix.pdf used on input line 852.
 (pdftex.def)             Requested size: 396.0pt x 170.81656pt.
- [20 <./Figures/evaluation4_scene.pdf> <./Figures/evaluation4_data_sampled_task
-s.pdf> <./Figures/evaluation4_data_sampled_r.pdf> <./Figures/evaluation2_data_l
-oss_rate.pdf> <./Figures/evaluation3_received_data.pdf> <./Figures/evaluation3_
-data_loss_rate.pdf>] [21 <./Figures/figure_appendix.pdf>] [22]
+
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:20 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[20 <./Figures/evaluation4_scene.pdf> <./Figures/evaluation4_data_sampled_tasks
+.pdf> <./Figures/evaluation4_data_sampled_r.pdf> <./Figures/evaluation2_data_lo
+ss_rate.pdf> <./Figures/evaluation3_received_data.pdf> <./Figures/evaluation3_d
+ata_loss_rate.pdf>]
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:21
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[21 <./Figures/figure_appendix.pdf>]
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:22 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[22]
 (./Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_
-Sampling_in_WSNs.bbl [23]) [24]
+Sampling_in_WSNs.bbl
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+ \OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Samplin
+g Intervals for Maximizing Data Sharing in WSNs:23
+ []
+
+
+Overfull \hbox (184.08435pt too wide) has occurred while \output is active
+\OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article CATS
+: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maxi
+mizing Data Sharing in WSNs, Publication date: June 2016.  []
+ []
+
+[23])
+Overfull \hbox (64.69585pt too wide) has occurred while \output is active
+\OT1/phv/m/n/9 CATS: Cooperative Allocation of Tasks and Scheduling of Sampling
+ Intervals for Maximizing Data Sharing in WSNs:24 
+ []
+
+
+Overfull \hbox (182.18074pt too wide) has occurred while \output is active
+[] \OT1/ptm/m/n/7 ACM Transactions on Sensor Networks, Vol. V, No. N, Article C
+ATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for M
+aximizing Data Sharing in WSNs, Publication date: June 2016.
+ []
+
+[24]
 (./Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing_Interval_Data_
 Sampling_in_WSNs.aux)
 
@@ -948,7 +1267,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5014 strings out of 493089
  73209 string characters out of 6134842
- 146264 words of memory out of 5000000
+ 146384 words of memory out of 5000000
  8266 multiletter control sequences out of 15000+600000
  59918 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -969,7 +1288,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist
 /utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on Cooperative_Allocation_and_Scheduling_of_Tasks_for_Minimizing
-_Interval_Data_Sampling_in_WSNs.pdf (24 pages, 1411362 bytes).
+_Interval_Data_Sampling_in_WSNs.pdf (24 pages, 1416391 bytes).
 PDF statistics:
  1243 PDF objects out of 1440 (max. 8388607)
  522 compressed objects within 6 object streams

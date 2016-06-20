@@ -23,7 +23,16 @@
 \usepackage[noend]{algpseudocode}
 \usepackage{epsfig,subfigure}
 \usepackage{mathptmx}
-\usepackage{url}
+\usepackage{url}		
+
+
+\setcopyright{acmlicensed}
+\issn{1550-4859/2016} 
+\acmYear{2016} 
+\acmMonth{6} 
+\acmArticle{CATS: Cooperative Allocation of Tasks and Scheduling of Sampling Intervals for Maximizing Data Sharing in WSNs}
+%\acmVolume{9}
+%\acmNumber{4}
 		
 \begin{document}
 
@@ -37,6 +46,8 @@ Jia~Xu
 \affil{Guangxi University}
 Pin~Lv
 \affil{Guangxi University}
+Tao~Chen
+\affil{National University of Defense Technology}
 Jianping~Yin
 \affil{National University of Defense Technology}
 }
@@ -44,6 +55,9 @@ Jianping~Yin
 \begin{abstract}
 Data sharing amongst multiple sampling tasks  significantly reduces energy consumption and communication cost in low-power WSNs. Conventional proposals have already scheduled the discrete point sampling tasks to decrease the amount of sampled data. However, less effort has been done for the applications which generate continuous interval sampling tasks. Moreover, most of pioneering work limits its view to schedule sampling intervals of tasks on a single sensor node, and neglects the process of task allocation in WSNs. Therefore, the gained efforts in the prior work cannot benefit a large-scale wireless sensor network because the performance of a scheduling method is sensitive to the strategy of task allocation. Broadening the scope to an entire network, this paper is the first work to maximize data sharing amongst continuous interval sampling tasks by jointly optimizing task allocation and scheduling of sampling intervals  in WSNs.  First, we formalize the joint optimization problem and prove it NP-hard. Second, we present \emph{COMBINE} operation which is the crucial ingredient of our solution. \emph{COMBINE} is a 2-factor approximate algorithm for maximizing data sharing amongst overlapping tasks.  Furthermore, our heuristic named \emph{CATS} is proposed. \emph{CATS} is 2-factor approximate algorithm for jointly allocating tasks and scheduling sampling intervals so as  to maximize data sharing in the entire network.  Extensive empirical study is conducted on a testbed of $50$ sensor nodes to evaluate the effectiveness of our methods. Besides, the scalability of our methods is verified by using the widely-used simulation tool, i.e., TOSSIM. The experimental results indicate that our methods successfully reduce the volume of sampled data and decrease the energy consumption significantly.
 \end{abstract}
+
+
+
 
 \begin{CCSXML}
 <ccs2012>
@@ -65,6 +79,8 @@ Data sharing amongst multiple sampling tasks  significantly reduces energy consu
 </ccs2012>
 \end{CCSXML}
 
+
+
 \ccsdesc[500]{Networks~Sensor networks}
 \ccsdesc[300]{Information systems~Spatial-temporal systems}
 \ccsdesc[100]{Networks~Cyber-physical networks}
@@ -75,9 +91,10 @@ Data sharing amongst multiple sampling tasks  significantly reduces energy consu
 %\acmformat{Yawei Zhao, Deke Guo, Jia Xu, Pin Lv and Jianping Yin, 2015. Cooperative Allocation and Scheduling of Tasks for Minimizing  Interval Data Sampling in WSNs.}
 
 \begin{bottomstuff}
+
 This work is supported by the National Natural Science Foundation of China (NSFC), under Grant 61170287, Grant 61232016, Grant 61402494, Grant 61402513, and Grant 61202487.
 
-Author's addresses: Y. Zhao {and} J. Yin, College of Computer, National University of Defense Technology; D. Guo, Science and Technology on Information System Engineering Laboratory, National University of Defense Technology; J. Xu and P. Lv, School of Computer, Electronics and Information, Guangxi University.
+Author's addresses: Yawei Zhao {and} Jianping Yin, College of Computer, National University of Defense Technology; Deke Guo and Tao Chen, Science and Technology on Information System Engineering Laboratory, National University of Defense Technology; Jia Xu and Pin Lv, School of Computer, Electronics and Information, Guangxi University.
 \end{bottomstuff}
 
 \maketitle
