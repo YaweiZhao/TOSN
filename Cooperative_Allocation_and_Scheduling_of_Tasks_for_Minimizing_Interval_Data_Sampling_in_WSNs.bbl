@@ -129,6 +129,16 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Li, Wu, Zhang, and Ni}{Li
+  et~al\mbox{.}}{2014}]%
+        {Li2014CUTS}
+{Haochao Li}, {Kaishun Wu}, {Qian Zhang}, {and} {Lionel~M. Ni}. 2014.
+\newblock \showarticletitle{CUTS: Improving Channel Utilization in Both Time
+  and Spatial Domain in WLANs}.
+\newblock {\em Proc. IEEE INFOCOM\/} {25}, 6 (2014), 1564--1572.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Liu, Yin, Leung, and Cai}{Liu
   et~al\mbox{.}}{2012}]%
         {Liu2012ISAR}
@@ -270,6 +280,39 @@
   Rajaraman}. 2005.
 \newblock \showarticletitle{Multi-query Optimization for Sensor Networks}.
 \newblock {\em Springer Lecture Notes in Computer Science\/} (2005), 307--321.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Zhang, Wu, Zhang, and Ni}{Wang
+  et~al\mbox{.}}{2014b}]%
+        {Wang2014TiM}
+{Guanhua Wang}, {Shanfeng Zhang}, {Kaishun Wu}, {Qian Zhang}, {and} {Lionel~M.
+  Ni}. 2014b.
+\newblock \showarticletitle{TiM: Fine-Grained Rate Adaptation in WLANs}.
+\newblock {\em IEEE Transactions on Mobile Computing\/} {15}, 3 (2014),
+  577--586.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Wu, Xiao, and Hamdi}{Wang
+  et~al\mbox{.}}{2014a}]%
+        {Wang2014Harnessing}
+{Lu Wang}, {Kaishun Wu}, {Jiang Xiao}, {and} {M. Hamdi}. 2014a.
+\newblock \showarticletitle{Harnessing Frequency Domain for Cooperative Sensing
+  and Multi-channel Contention in CRAHNs}.
+\newblock {\em IEEE Transactions on Wireless Communications\/} {13}, 1 (2014),
+  440--449.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wu, Li, Wang, Yi, Liu, Chen, Luo, Zhang, and
+  Ni}{Wu et~al\mbox{.}}{2013}]%
+        {Wu2013hJam}
+{Kaishun Wu}, {Haochao Li}, {Lu Wang}, {Youwen Yi}, {Yunhuai Liu}, {Dihu Chen},
+  {Xiaonan Luo}, {Qian Zhang}, {and} {Lionel~M. Ni}. 2013.
+\newblock \showarticletitle{hJam: Attachment Transmission in WLANs}.
+\newblock {\em IEEE Transactions on Mobile Computing\/} {12}, 12 (2013),
+  1449--1457.
 \newblock
 
 
